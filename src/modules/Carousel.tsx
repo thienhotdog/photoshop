@@ -1,8 +1,8 @@
 import { DotPosition } from "antd/es/carousel";
 import { useState } from "react";
 import { Carousel, Col, Row } from "antd";
-import before_1959 from "./../assets/Photo editing/IMG_9159_1.jpg";
-import after_1959 from "./../assets/Photo editing/IMG_9159.jpg";
+import before_1959 from "./../assets/Photo editing/91591.jpg";
+import after_1959 from "./../assets/Photo editing/91592.jpg";
 import after_11245 from "./../assets/Day to Twilight/11245.jpg";
 import before_11245 from "./../assets/Day to Twilight/11245S.jpg";
 import before_55 from "./../assets/Retouching/55.jpg";
