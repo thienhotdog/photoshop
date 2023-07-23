@@ -1,16 +1,16 @@
 import { DotPosition } from "antd/es/carousel";
 import { useState } from "react";
 import { Carousel, Col, Row } from "antd";
-import before_1959 from "./../assets/Photo editing/91591.jpg";
-import after_1959 from "./../assets/Photo editing/91592.jpg";
-import after_11245 from "./../assets/Day to Twilight/11245.jpg";
-import before_11245 from "./../assets/Day to Twilight/11245S.jpg";
+import before_1959 from "./../assets/Photoediting/91591.jpg";
+import after_1959 from "./../assets/Photoediting/91592.jpg";
+import after_11245 from "./../assets/DaytoTwilight/11245.jpg";
+import before_11245 from "./../assets/DaytoTwilight/11245S.jpg";
 import before_55 from "./../assets/Retouching/55.jpg";
 import after_55 from "./../assets/Retouching/56.jpg";
-import before_1 from "./../assets/Virtual Staging/Virtual Staging/02.jpg";
-import after_1 from "./../assets/Virtual Staging/Virtual Staging/01.jpg";
-import before_product from "./../assets/Clipping Path/S31.jpg";
-import after_product from "./../assets/Clipping Path/S32.jpg";
+import before_1 from "./../assets/VirtualStaging/Virtual Staging/02.jpg";
+import after_1 from "./../assets/VirtualStaging/Virtual Staging/01.jpg";
+import before_product from "./../assets/ClippingPath/S31.jpg";
+import after_product from "./../assets/ClippingPath/S32.jpg";
 const Carousels = () => {
   return (
     <div>
