@@ -1,0 +1,31 @@
+.h2 {
+  font-size: 42px;
+  padding: 0 2em;
+}
+.p {
+  padding: 1em 4em;
+  font-size: 18px;
+}
+.p2 {
+  padding: 0em 4em;
+  font-size: 18px;
+}
+.div {
+  margin-top: 15%;
+}
+
+.img {
+  min-height: 400px;
+  width: auto;
+}
+
+@media only screen and (max-width: 1066px) {
+  .h2 {
+    font-size: 38px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .div {
+    margin-top: 20px;
+  }
+}
