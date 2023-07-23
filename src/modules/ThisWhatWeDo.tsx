@@ -1,19 +1,19 @@
-import { Col, Row } from "antd";
-import before_9045 from "./../assets/Photo editing/DSC_9045.jpg";
-import after_9045 from "./../assets/Photo editing/DSC_9046.jpg";
-import before_19141 from "./../assets/Day to Twilight/19141.jpg";
-import after_19141 from "./../assets/Day to Twilight/19143.jpg";
+// import { Col, Row } from "antd";
+// import before_9045 from "./../assets/Photo editing/DSC_9045.jpg";
+// import after_9045 from "./../assets/Photo editing/DSC_9046.jpg";
+// import before_19141 from "./../assets/Day to Twilight/19141.jpg";
+// import after_19141 from "./../assets/Day to Twilight/19143.jpg";
 
-import before_26443 from "./../assets/Retouching/2 day-26443.jpg";
-import after_26443 from "./../assets/Retouching/2 day-264.jpg";
+// import before_26443 from "./../assets/Retouching/2 day-26443.jpg";
+// import after_26443 from "./../assets/Retouching/2 day-264.jpg";
 
-import before_vr03 from "./../assets/Virtual Staging/Virtual Staging/Virtual Staging 03.jpg";
-import after_vr03 from "./../assets/Virtual Staging/Virtual Staging/Virtual Staging 04.jpg";
+// import before_vr03 from "./../assets/Virtual Staging/Virtual Staging/Virtual Staging 03.jpg";
+// import after_vr03 from "./../assets/Virtual Staging/Virtual Staging/Virtual Staging 04.jpg";
 
-import after_20230207 from "./../assets/Clipping Path/20230207-DYConsultants-Entela-001.jpg";
-import before_20230207 from "./../assets/Clipping Path/20230207-DYConsultants-Entela-001_1.jpg";
-import before_20230207_joanna from "./../assets/Clipping Path/20230207-DYConsultants-Joanna-002.jpg";
-import after_20230207_joanna from "./../assets/Clipping Path/20230207-DYConsultants-Joanna-002_1.jpg";
+// import after_20230207 from "./../assets/Clipping Path/20230207-DYConsultants-Entela-001.jpg";
+// import before_20230207 from "./../assets/Clipping Path/20230207-DYConsultants-Entela-001_1.jpg";
+// import before_20230207_joanna from "./../assets/Clipping Path/20230207-DYConsultants-Joanna-002.jpg";
+// import after_20230207_joanna from "./../assets/Clipping Path/20230207-DYConsultants-Joanna-002_1.jpg";
 
 import { Link } from "react-router-dom";
 
@@ -24,7 +24,7 @@ const ThisWhatWeDo = () => {
         THIS IS WHAT WE DO
       </h3>
       <div className="mx-[6%] mt-10">
-        <Row gutter={32}>
+        {/* <Row gutter={32}>
           <Col md={{ span: 24 }} lg={{ span: 12 }} className="py-5   ">
             <div className="w-full overflow-hidden cursor-pointer">
               <Link to="/home/photoediting">
@@ -290,7 +290,7 @@ const ThisWhatWeDo = () => {
               </p>
             </div>
           </Col>
-        </Row>
+        </Row> */}
       </div>
     </div>
   );
