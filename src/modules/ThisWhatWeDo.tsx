@@ -1,6 +1,6 @@
 import { Col, Row } from "antd";
-import before_9045 from "./../assets/Photoediting/DSC_9045.jpg";
-import after_9045 from "./../assets/Photoediting/DSC_9046.jpg";
+import before_9045 from "./../assets/Photoediting/9045.jpg";
+import after_9045 from "./../assets/Photoediting/9046.jpg";
 import before_19141 from "./../assets/DaytoTwilight/19141.jpg";
 import after_19141 from "./../assets/DaytoTwilight/19143.jpg";
 
