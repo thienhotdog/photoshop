@@ -1,8 +1,8 @@
 import { DotPosition } from "antd/es/carousel";
 import { useState } from "react";
 import { Carousel, Col, Row } from "antd";
-import before_1959 from "./../assets/Photoediting/91591.jpg";
-import after_1959 from "./../assets/Photoediting/91592.jpg";
+// import before_1959 from "./../assets/Photoediting/91591.jpg";
+// import after_1959 from "./../assets/Photoediting/91592.jpg";
 import after_11245 from "./../assets/DaytoTwilight/11245.jpg";
 import before_11245 from "./../assets/DaytoTwilight/11245S.jpg";
 import before_55 from "./../assets/Retouching/55.jpg";
@@ -15,7 +15,7 @@ const Carousels = () => {
   return (
     <div>
       <Carousel autoplay dotPosition={"top"}>
-        <div className="w-full  ">
+        {/* <div className="w-full  ">
           <div className="flex justify-between">
             <div className="w-[49.85%]">
               <img src={before_1959} alt="" className="w-full" />
@@ -36,7 +36,7 @@ const Carousels = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="w-full  ">
           <div className="flex justify-between">
