@@ -1,14 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
 
-import { appRoutes } from "./routes/routes.routes";
-import LayoutMain from "./layouts/Layout";
-import PrivateRouter from "./routes/PrivateRouter";
-
-import { PATH_SIGNIN, PATH_NEW_SALE } from "./routes/routes.paths";
-
-import { isAuthenticated } from "./utils/localStorage/localStorega";
-import LayoutHeader from "./layouts/Layout.header";
 import Home from "./pages/Home";
 import Categories from "./pages/Categories";
 import Renders from "./pages/Renders";

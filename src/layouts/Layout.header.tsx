@@ -1,19 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import { logout } from "../api/login.api";
-import { UserICon, UsersIcon } from "../components/icons";
-import { Card, Carousel, Col, Row } from "antd";
-import Meta from "antd/es/card/Meta";
-import { useState } from "react";
-import type { DotPosition } from "antd/es/carousel";
-import Style from "./Layout.css.module.css";
-import { ClockCircleOutlined, CloudUploadOutlined } from "@ant-design/icons";
-import time from "./../assets/24h.png";
-import no from "./../assets/no.png";
-import change from "./../assets/change.png";
-import real from "./../assets/real.png";
-import copy from "./../assets/copy.png";
-import free from "./../assets/free.png";
-import Footer from "./Layout.footer";
+
 import logo from "./../assets/anh mau/lo go/Lo go An Binh.png";
 type Props = {
   title: string;
