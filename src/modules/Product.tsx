@@ -14,9 +14,9 @@ const ProductPortfolio = ({ title, data }: Props) => {
     <div className={style.setion}>
       <h3 className={style.h2}>{title}</h3>
       <ul className={style.ul}>
-        {data.map((item: Data) => {
+        {data?.map((item: Data) => {
           return (
-            <li>
+            <li key={item.text}>
               <h3 className={style.h3}>{item.textTitle}</h3>
               <p className={style.p}>{item.text}</p>
             </li>

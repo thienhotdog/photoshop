@@ -8,7 +8,7 @@ import img_11139 from "./../assets/2018-08-11 139.jpg";
 import img_11147 from "./../assets/2018-08-11 147.jpg";
 const CarouselsOne = () => {
   return (
-    <div className="mt-10">
+    <div>
       <Carousel autoplay dotPosition={"top"}>
         <div className="">
           <img src={img_1} alt="" className="w-[50%] ml-[25%]" />
