@@ -41,3 +41,47 @@
 .span {
   padding-left: 10px;
 }
+
+@media only screen and (max-width: 1600px) {
+  .list_nav_item {
+    display: flex;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 40px;
+  }
+  .nav_item {
+    padding: 10px 15px;
+    color: #008000;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .list_nav_item {
+    display: flex;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 35px;
+  }
+  .nav_item {
+    padding: 10px 10px;
+    color: #008000;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .nav_item {
+    padding: 5px 10px;
+    color: #008000;
+  }
+  .nav_item_hover {
+    padding: 5px 10px;
+  }
+  .list_nav_item {
+    display: flex;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 700;
+    margin-left: 30px;
+  }
+}
