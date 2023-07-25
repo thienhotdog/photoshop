@@ -54,13 +54,13 @@ const LayoutHeader = (props: Props) => {
               )}
               {props.title == "COMMERCIAL" ? (
                 <li className="px-10 mx-3 text-green-500   	">
-                  <Link to="/category" onClick={scrollToTop}>
+                  <Link to="/servives" onClick={scrollToTop}>
                     <p className="mt-5">SERVIVES</p>
                   </Link>
                 </li>
               ) : (
                 <li className="px-10 mx-3 hover:text-[#ec1c38] text-black   	">
-                  <Link to="/category" onClick={scrollToTop}>
+                  <Link to="/servives" onClick={scrollToTop}>
                     <p className="mt-5">SERVIVES</p>
                   </Link>
                 </li>
@@ -549,22 +549,22 @@ const LayoutHeader = (props: Props) => {
             {props.title == "RENDERS" && (
               <ul className="flex cursor-pointer ">
                 <li className="px-10 hover:text-[#ec1c38] text-white  h-[43px] 	">
-                  <Link to="/category" onClick={scrollToTop}>
+                  <Link to="/servives" onClick={scrollToTop}>
                     <p className="mt-2">EXTERIOR RENDERS</p>
                   </Link>
                 </li>
                 <li className="px-10 hover:text-[#ec1c38] text-white ">
-                  <Link to="/category" onClick={scrollToTop}>
+                  <Link to="/servives" onClick={scrollToTop}>
                     <p className="mt-2">INTERIOR RENDERS</p>
                   </Link>
                 </li>
                 <li className="px-10 hover:text-[#ec1c38] text-white">
-                  <Link to="/category" onClick={scrollToTop}>
+                  <Link to="/servives" onClick={scrollToTop}>
                     <p className="mt-2">360° RENDERS </p>
                   </Link>
                 </li>
                 <li className="px-10 hover:text-[#ec1c38] text-white">
-                  <Link to="/category" onClick={scrollToTop}>
+                  <Link to="/servives" onClick={scrollToTop}>
                     <p className="mt-2">360° VIRTUAL TOURS</p>
                   </Link>
                 </li>

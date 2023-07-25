@@ -10,13 +10,13 @@ import VirtualStaging from "./pages/residential/VirtualStaging";
 import ClippingPath from "./pages/residential/ClippingPath";
 import Panarama from "./pages/residential/Panarama";
 import VideoEditing from "./pages/residential/VideoEditing";
-import VirtualStagingCategory from "./pages/commercial/VirtualStagingCategory";
-import VirtualRenovation from "./pages/commercial/VirtualRenovation";
-import ImageEnhancement from "./pages/commercial/ImageEnhancement";
-import DayToDusk from "./pages/commercial/DayToDusk";
-import ItemRemoval from "./pages/commercial/ItemRemoval";
-import FloorPlans from "./pages/commercial/FloorPlans";
-import RendersCommercial from "./pages/commercial/RendersCommercial";
+import VirtualStagingCategory from "./pages/servives/VirtualStagingCategory";
+import VirtualRenovation from "./pages/servives/VirtualRenovation";
+import ImageEnhancement from "./pages/servives/ImageEnhancement";
+import DayToDusk from "./pages/servives/DayToDusk";
+import ItemRemoval from "./pages/servives/ItemRemoval";
+import FloorPlans from "./pages/servives/FloorPlans";
+import RendersCommercial from "./pages/servives/RendersCommercial";
 
 const App = () => {
   return (
@@ -24,7 +24,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="" element={<Home />} />
-          <Route path="/category" element={<Categories />} />
+          <Route path="/servives" element={<Categories />} />
           <Route path="/renders" element={<Renders />} />
           {/* RESIDENTIAL REAL ESTATE */}
           <Route path="/home/photoediting" element={<Photoediting />} />

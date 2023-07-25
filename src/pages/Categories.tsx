@@ -5,7 +5,7 @@ import Investors from "../modules/Investors";
 import ProductPortfolio from "../modules/Product";
 import ProductByCategory from "../modules/ProductByCategory";
 import ThisWhatWeDo from "../modules/ThisWhatWeDo";
-
+import style from "./css/servives.module.css";
 const data = [
   {
     textTitle: "SELL PROPERTIES 50% FASTER",
@@ -29,7 +29,18 @@ const Categories = () => {
     <>
       <LayoutHeader title="COMMERCIAL" />
       <CarouselsOne />
-      <ProductPortfolio title="Why Enhance Your Listing Photos?" data={data} />
+      {/* <ProductPortfolio title="Why Enhance Your Listing Photos?" data={data} /> */}
+      <div className={style.parent}>
+        <div className={style.child}>
+          <h1 className={style.h1}>Our Service</h1>
+          <p className={style.p}>
+            Based on safety production and with high quality, fast turnaround
+            time, educated and hard-workingstaff as well updated and advanced
+            technology, we are willing to provide you the complete
+            online-marketing solutions for real estate agencies.
+          </p>
+        </div>
+      </div>
       <ProductByCategory />
       <div className="pt-10">
         <Investors />

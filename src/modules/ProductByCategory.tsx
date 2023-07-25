@@ -25,12 +25,18 @@ const ProductByCategory = () => {
               We also remove yellow or off-white discoloration to create a
               bright, crisp image.
             </p>
-            <p className={style.p2}>INCLUDED</p>
+
+            <button className={style.button}>INCLUDED</button>
           </div>
         </Col>
         {lg == true ? (
           <>
-            <Col xs={{ span: 24 }} sm={{ span: 24 }} lg={{ span: 12 }}>
+            <Col
+              xs={{ span: 24 }}
+              sm={{ span: 24 }}
+              lg={{ span: 12 }}
+              className="py-3"
+            >
               <div className={style.div}>
                 <h2 className={style.h2}>WHITE BALANCING</h2>
                 <p className={style.p}>
@@ -39,10 +45,16 @@ const ProductByCategory = () => {
                   the best light. We also remove yellow or off-white
                   discoloration to create a bright, crisp image.
                 </p>
-                <p className={style.p2}>INCLUDED</p>
+
+                <button className={style.button}>INCLUDED</button>
               </div>
             </Col>
-            <Col xs={{ span: 24 }} sm={{ span: 24 }} lg={{ span: 12 }}>
+            <Col
+              xs={{ span: 24 }}
+              sm={{ span: 24 }}
+              lg={{ span: 12 }}
+              className="py-3"
+            >
               <div>
                 <img
                   src="https://d1dbtne32ilur4.cloudfront.net/img/tiles/imageEnhancementTile01.jpg"
@@ -58,7 +70,7 @@ const ProductByCategory = () => {
               xs={{ span: 24 }}
               sm={{ span: 24 }}
               lg={{ span: 12 }}
-              className="mt-10"
+              className="py-3"
             >
               <div>
                 <img
@@ -68,7 +80,12 @@ const ProductByCategory = () => {
                 />
               </div>
             </Col>
-            <Col xs={{ span: 24 }} sm={{ span: 24 }} lg={{ span: 12 }}>
+            <Col
+              xs={{ span: 24 }}
+              sm={{ span: 24 }}
+              lg={{ span: 12 }}
+              className="py-3"
+            >
               <div className={style.div}>
                 <h2 className={style.h2}>WHITE BALANCING</h2>
                 <p className={style.p}>
@@ -77,7 +94,7 @@ const ProductByCategory = () => {
                   the best light. We also remove yellow or off-white
                   discoloration to create a bright, crisp image.
                 </p>
-                <p className={style.p2}>INCLUDED</p>
+                <button className={style.button}>INCLUDED</button>
               </div>
             </Col>
           </>
