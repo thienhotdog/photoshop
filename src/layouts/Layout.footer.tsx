@@ -1,9 +1,10 @@
+import { Col, Row } from "antd";
 import { Link } from "react-router-dom";
-
+import style from "./LayoutFooter.module.css";
 const LayoutFooter = () => {
   return (
     <footer>
-      <div className="bg-black py-10">
+      {/* <div className="bg-black py-10">
         <div className="flex justify-center	">
           <img
             src="https://d1dbtne32ilur4.cloudfront.net/img/logoSecondary2018.svg"
@@ -127,22 +128,257 @@ const LayoutFooter = () => {
             </li>
           </ul>
         </div>
+      </div> */}
+
+      <div className={style.container}>
+        <div className={style.row}>
+          <div className={style.col_1}>
+            <div className={style.footer_col}>
+              <div className={style.footer_info_item}>
+                <div className={style.footer_info_icon}>
+                  <img
+                    src="https://fotosolution.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpin-icon.1e3d3881.png&w=32&q=75"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h3 className={style.footer_info_title}>Our main Office</h3>
+                  <div className={style.footer_info_desc}>
+                    <p>
+                      8th Floor, Song Da 9 Buiding, No.2 Nguyen Hoang Str, My
+                      Dinh,
+                    </p>
+                    <p>Tu Liem District, Ha Noi, Viet Nam</p>
+                  </div>
+                </div>
+              </div>
+              <div className={style.footer_info_item}>
+                <div className={style.footer_info_icon}>
+                  <img
+                    src="https://fotosolution.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpin-icon.1e3d3881.png&w=32&q=75"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h3 className={style.footer_info_title}>
+                    United States Office
+                  </h3>
+                  <div className={style.footer_info_desc}>
+                    <p>Address: 131a highland st, worcester,ma,01609</p>
+                    <p>Office manager: Jason Nguyen.</p>
+                    <p>Mobile: 7746412965</p>
+                    <p>Email: jasonnguyen@fotosolution.com</p>
+                  </div>
+                </div>
+              </div>
+              <div className={style.footer_info_item}>
+                <div className={style.footer_info_icon}>
+                  <img
+                    src="https://fotosolution.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpin-icon.1e3d3881.png&w=32&q=75"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h3 className={style.footer_info_title}>Second Office</h3>
+                  <div className={style.footer_info_desc}>
+                    <p>
+                      TrucThang, Truc Ninh District, Nam Dinh City, VIet Nam
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className={style.footer_info_item}>
+                <div className={style.footer_info_icon}>
+                  <img
+                    src="https://fotosolution.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fskype-icon.c90f0f5b.png&w=32&q=75"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <div className={style.footer_info_desc}>
+                    <p>Skype: fotosolution</p>
+                  </div>
+                </div>
+              </div>
+              <div className={style.footer_info_item}>
+                <div className={style.footer_info_icon}>
+                  <img
+                    src="https://fotosolution.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Femail-icon.e759b174.png&w=32&q=75"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <div className={style.footer_info_desc}>
+                    <p>contact@fotosolution.com</p>
+                  </div>
+                </div>
+              </div>
+              <div className={style.footer_info_item}>
+                <div className={style.footer_info_icon}>
+                  <img
+                    src="https://fotosolution.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Femail-icon.e759b174.png&w=32&q=75"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h3 className={style.footer_info_title}>Opening Hours</h3>
+                  <div className={style.footer_info_desc}>
+                    <p>Monday- Friday: 9.00 AM – 18.00 PM</p>
+                    <p>Saturday – Sunday: 9.00 AM – 12:00 PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={style.col_2}>
+            <div className={style.footer_col}>
+              <div className={style.footer_info_item}>
+                <div>
+                  <h3 className={style.footer_info_title}>Quick Links</h3>
+                  <ul className={style.quick_link_list}>
+                    <li className={style.quick_link_item}>
+                      <Link to="/" className={style.quick_link}>
+                        Home
+                      </Link>
+                    </li>
+                    <li className={style.quick_link_item}>
+                      <Link to="/" className={style.quick_link}>
+                        About Us
+                      </Link>
+                    </li>
+                    <li className={style.quick_link_item}>
+                      <Link to="/" className={style.quick_link}>
+                        Services
+                      </Link>
+                    </li>
+                    <li className={style.quick_link_item}>
+                      <Link to="/" className={style.quick_link}>
+                        How it works
+                      </Link>
+                    </li>
+                    <li className={style.quick_link_item}>
+                      <Link to="/" className={style.quick_link}>
+                        Our Blogs
+                      </Link>
+                    </li>
+                    <li className={style.quick_link_item}>
+                      <Link to="/" className={style.quick_link}>
+                        Privacy Policy
+                      </Link>
+                    </li>
+                    <li className={style.quick_link_item}>
+                      <Link to="/" className={style.quick_link}>
+                        Term Of Service
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={style.col_3}>
+            <div className="pl-[20px]">
+              <h3 className={style.footer_info_title}>Connect With Us</h3>
+            </div>
+
+            <div className={style.footer_col}>
+              <div className={style.footer_info_item}>
+                <div className={style.footer_info_icon}>
+                  <img
+                    src="https://fotosolution.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpin-icon.1e3d3881.png&w=32&q=75"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <div className={style.footer_info_desc}>
+                    <p>fb.com/PhotoSolutionsDigital</p>
+                  </div>
+                </div>
+              </div>
+              <div className={style.footer_info_item}>
+                <div className={style.footer_info_icon}>
+                  <img
+                    src="https://fotosolution.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpin-icon.1e3d3881.png&w=32&q=75"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <div className={style.footer_info_desc}>
+                    <p>twitter.com/fotosolution</p>
+                  </div>
+                </div>
+              </div>
+              <div className={style.footer_info_item}>
+                <div className={style.footer_info_icon}>
+                  <img
+                    src="https://fotosolution.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpin-icon.1e3d3881.png&w=32&q=75"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <div className={style.footer_info_desc}>
+                    <p>Photo solutiond digital.Ltd</p>
+                  </div>
+                </div>
+              </div>
+              <div className={style.footer_info_item}>
+                <div className={style.footer_info_icon}>
+                  <img
+                    src="https://fotosolution.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpin-icon.1e3d3881.png&w=32&q=75"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <div className={style.footer_info_desc}>
+                    <p>linkedin.com/in/fotosolution/</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="bg-black text-white border-t-[1px] border-b-indigo-500 ">
-        <ul className="flex justify-center	">
-          <li className="p-5 cursor-pointer hover:text-red-500">
-            Privacy Policy
-          </li>
-          <li className="p-5 cursor-pointer hover:text-red-500">
-            Refunds & Returns Policy
-          </li>
-          <li className="p-5 cursor-pointer hover:text-red-500">
-            Credit Card Security
-          </li>
-          <li className="p-5 cursor-pointer hover:text-red-500">
-            Terms & Conditions
-          </li>
-        </ul>
+      {/* <div className="bg-black text-white border-t-[1px] border-b-indigo-500 ">
+        <div className={style.row}>
+          <div className={style.col_4}>
+            <p>Copyright 2022 FOTOSOLUTION | All rights reserved</p>
+          </div>
+
+          <div className={style.col_4}>
+            <ul className={style.list_coppy_right_link}>
+              <li className={style.coppy_right_link}>Privacy Policy</li>
+              <li className={style.coppy_right_link}>Term Of Service</li>
+            </ul>
+          </div>
+        </div>
+      </div> */}
+      <div className="bg-black text-white border-t-[1px] border-b-indigo-500">
+        <div className={style.containers}>
+          <div className={style.rows}>
+            <div className={style.col_4}>
+              <div className={style.footer_col}>
+                <p>Copyright 2022 FOTOSOLUTION | All rights reserved</p>
+              </div>
+            </div>
+            <div className={style.col_4}>
+              <div className={style.footer_col}>
+                <ul className={style.list_coppy_right_link}>
+                  <li>
+                    <Link to="" className={style.coppy_right_link}>
+                      Privacy Policy
+                    </Link>
+                  </li>
+                  <li>
+                    {" "}
+                    <Link to="" className={style.coppy_right_link}>
+                      Term Of Service
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   );
