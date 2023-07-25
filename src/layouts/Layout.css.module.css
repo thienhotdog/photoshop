@@ -1,19 +1,43 @@
-@media only screen and (min-width: 1200px) {
-  .media {
-    min-height: 800px;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .media2 {
-    text-align: center;
-  }
-}
-
 .header {
   width: 100%;
   position: sticky;
   top: 0;
-
   z-index: 100;
+}
+
+.header_1 {
+  padding: 10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 5px;
+  background-color: #fff;
+}
+
+.header_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+}
+
+.img {
+  width: 70px;
+}
+.list_nav_item {
+  display: flex;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 40px;
+}
+.nav_item {
+  padding: 10px 20px;
+  color: #008000;
+}
+.nav_item_hover {
+  padding: 10px 20px;
+}
+.nav_item_hover:hover {
+  color: red;
+}
+.span {
+  padding-left: 10px;
 }
