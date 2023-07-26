@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import style from "./Layout.css.module.css";
 import logo from "./../assets/anh mau/lo go/Lo go An Binh.png";
 import { useEffect, useState } from "react";
+import menu from "./../assets/menu.png";
 type Props = {
   title: string;
   title2?: string;
@@ -132,16 +133,21 @@ const LayoutHeader = (props: Props) => {
               )}
             </ul>
           </div>
-
-          <ul className={style.list_nav_item}>
-            <li className={style.nav_item_hover}>
-              <p>LOGIN</p>
-            </li>
-            <li className={style.nav_item_hover}>
-              <p>SIGN UP</p>
-            </li>
-
+          <div className="flex items-center">
+            <ul className={style.list_nav_items}>
+              <li className={style.nav_item_hover}>
+                <Link to="/" onClick={scrollToTop}>
+                  <p>LOGIN</p>
+                </Link>
+              </li>
+              <li className={style.nav_item_hover}>
+                <Link to="/" onClick={scrollToTop}>
+                  <p>SIGN UP</p>
+                </Link>
+              </li>
+            </ul>
             <div className="flex items-center">
+              <img src={menu} alt="" className={style.imgs} />
               <Link to="">
                 <img
                   src="https://d1dbtne32ilur4.cloudfront.net/img/flags/US.svg"
@@ -151,203 +157,144 @@ const LayoutHeader = (props: Props) => {
               </Link>
               <span className={style.span}> United States</span>
             </div>
-          </ul>
+          </div>
         </div>
       </div>
       {/* header2 */}
-      <div
-        className="py-3 bg-[#008000] "
-        style={{ boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 5px" }}
-      >
-        <div className="px-2  gap-x-10	 w-full ">
-          <div className="flex justify-between items-center">
+      <div className={style.header_2}>
+        <div className={style.header_2_nav}>
+          <div className={style.header_2_nav_div}>
             {(props.title == "" || !props.title) && (
-              <ul className="flex cursor-pointer ">
+              <ul className={style.list_nav2_item}>
                 {props?.title2 == "photoediting" ? (
-                  <li className="px-10 text-[#ec1c38] text-white  	">
+                  <li className={style.nav2_item}>
                     <Link to="/home/photoediting" onClick={scrollToTop}>
-                      <div className="text-[#ec1c38]">
-                        <div className="leading-[22px] text-[16px]  font-normal	">
-                          Real Estate
-                        </div>
-                        <div className="leading-[25px] text-[20px]  font-medium	">
-                          Photo editing
-                        </div>
+                      <div>
+                        <div className={style.nav2_item_1}>Real Estate</div>
+                        <div className={style.nav2_item_2}>Photo editing</div>
                       </div>
                     </Link>
                   </li>
                 ) : (
-                  <li className="px-10 hover:text-[#ec1c38] text-white    	">
+                  <li className={style.nav2_item_hover}>
                     <Link to="/home/photoediting" onClick={scrollToTop}>
-                      <div className="text-[#fff] hover:text-[#ec1c38]">
-                        <div className="leading-[22px] text-[16px]  font-normal	">
-                          Real Estate
-                        </div>
-                        <div className="leading-[25px] text-[20px]  font-medium	">
-                          Photo editing
-                        </div>
+                      <div>
+                        <div className={style.nav2_item_1}>Real Estate</div>
+                        <div className={style.nav2_item_2}>Photo editing</div>
                       </div>
                     </Link>
                   </li>
                 )}
                 {props?.title2 == "daytotwilight" ? (
-                  <li className="px-10 text-[#ec1c38] text-white ">
+                  <li className={style.nav2_item}>
                     <Link to="/home/day_to_twilight" onClick={scrollToTop}>
-                      <div className="text-[#ec1c38]">
-                        <div className="leading-[22px] text-[16px]  font-normal	">
-                          Convert
-                        </div>
-                        <div className="leading-[25px] text-[20px]  font-medium	">
-                          Day to Twilight
-                        </div>
+                      <div>
+                        <div className={style.nav2_item_1}>Convert</div>
+                        <div className={style.nav2_item_2}>Day to Twilight</div>
                       </div>
                     </Link>
                   </li>
                 ) : (
-                  <li className="px-10 hover:text-[#ec1c38] text-white ">
+                  <li className={style.nav2_item_hover}>
                     <Link to="/home/day_to_twilight" onClick={scrollToTop}>
-                      <div className="text-[#fff] hover:text-[#ec1c38]">
-                        <div className="leading-[22px] text-[16px]  font-normal	">
-                          Convert
-                        </div>
-                        <div className="leading-[25px] text-[20px]  font-medium	">
-                          Day to Twilight
-                        </div>
+                      <div>
+                        <div className={style.nav2_item_1}>Convert</div>
+                        <div className={style.nav2_item_2}>Day to Twilight</div>
                       </div>
                     </Link>
                   </li>
                 )}
                 {props?.title2 == "retouching" ? (
-                  <li className="px-10 text-[#ec1c38] text-white">
+                  <li className={style.nav2_item}>
                     <Link to="/home/retouching" onClick={scrollToTop}>
-                      <div className="text-[#ec1c38]">
-                        <div className="leading-[22px] text-[16px]  font-normal	">
-                          Product
-                        </div>
-                        <div className="leading-[25px] text-[20px]  font-medium	">
-                          Retouching
-                        </div>
+                      <div>
+                        <div className={style.nav2_item_1}>Product</div>
+                        <div className={style.nav2_item_2}>Retouching</div>
                       </div>
                     </Link>
                   </li>
                 ) : (
-                  <li className="px-10 hover:text-[#ec1c38] text-white">
+                  <li className={style.nav2_item_hover}>
                     <Link to="/home/retouching" onClick={scrollToTop}>
-                      <div className="text-[#fff] hover:text-[#ec1c38]">
-                        <div className="leading-[22px] text-[16px]  font-normal	">
-                          Product
-                        </div>
-                        <div className="leading-[25px] text-[20px]  font-medium	">
-                          Retouching
-                        </div>
+                      <div>
+                        <div className={style.nav2_item_1}>Product</div>
+                        <div className={style.nav2_item_2}>Retouching</div>
                       </div>
                     </Link>
                   </li>
                 )}
                 {props?.title2 == "virtual_staging" ? (
-                  <li className="px-10 text-[#ec1c38] text-white">
+                  <li className={style.nav2_item}>
                     <Link to="/home/virtual_staging" onClick={scrollToTop}>
-                      <div className="text-[#ec1c38]">
-                        <div className="leading-[22px] text-[16px]  font-normal	">
-                          Virtual
-                        </div>
-                        <div className="leading-[25px] text-[20px]  font-medium	">
-                          Staging
-                        </div>
+                      <div>
+                        <div className={style.nav2_item_1}>Virtual</div>
+                        <div className={style.nav2_item_2}>Staging</div>
                       </div>
                     </Link>
                   </li>
                 ) : (
-                  <li className="px-10 hover:text-[#ec1c38] text-white">
+                  <li className={style.nav2_item_hover}>
                     <Link to="/home/virtual_staging" onClick={scrollToTop}>
-                      <div className="text-[#fff] hover:text-[#ec1c38]">
-                        <div className="leading-[22px] text-[16px]  font-normal	">
-                          Virtual
-                        </div>
-                        <div className="leading-[25px] text-[20px]  font-medium	">
-                          Staging
-                        </div>
+                      <div>
+                        <div className={style.nav2_item_1}>Virtual</div>
+                        <div className={style.nav2_item_2}>Staging</div>
                       </div>
                     </Link>
                   </li>
                 )}
                 {props?.title2 == "clipping_path" ? (
-                  <li className="px-10 text-[#ec1c38] text-white">
+                  <li className={style.nav2_item}>
                     <Link to="/home/clipping_path" onClick={scrollToTop}>
-                      <div className="text-[#ec1c38]">
-                        <div className="leading-[22px] text-[16px]  font-normal	">
-                          Clipping
-                        </div>
-                        <div className="leading-[25px] text-[20px]  font-medium	">
-                          Path
-                        </div>
+                      <div>
+                        <div className={style.nav2_item_1}>Clipping</div>
+                        <div className={style.nav2_item_2}>Path</div>
                       </div>
                     </Link>
                   </li>
                 ) : (
-                  <li className="px-10 hover:text-[#ec1c38] text-white">
+                  <li className={style.nav2_item_hover}>
                     <Link to="/home/clipping_path" onClick={scrollToTop}>
-                      <div className="text-[#fff] hover:text-[#ec1c38]">
-                        <div className="leading-[22px] text-[16px]  font-normal	">
-                          Clipping
-                        </div>
-                        <div className="leading-[25px] text-[20px]  font-medium	">
-                          Path
-                        </div>
+                      <div>
+                        <div className={style.nav2_item_1}>Clipping</div>
+                        <div className={style.nav2_item_2}>Path</div>
                       </div>
                     </Link>
                   </li>
                 )}
                 {props?.title2 == "720_panarama" ? (
-                  <li className="px-10 text-[#ec1c38] text-white">
+                  <li className={style.nav2_item}>
                     <Link to="/home/720_panarama" onClick={scrollToTop}>
-                      <div className="text-[#ec1c38]">
-                        <div className="leading-[22px] text-[16px]  font-normal	">
-                          360
-                        </div>
-                        <div className="leading-[25px] text-[20px]  font-medium	">
-                          panarama
-                        </div>
+                      <div>
+                        <div className={style.nav2_item_1}>360</div>
+                        <div className={style.nav2_item_2}>panarama</div>
                       </div>
                     </Link>
                   </li>
                 ) : (
-                  <li className="px-10 hover:text-[#ec1c38] text-white">
+                  <li className={style.nav2_item_hover}>
                     <Link to="/home/720_panarama" onClick={scrollToTop}>
-                      <div className="text-[#fff] hover:text-[#ec1c38]">
-                        <div className="leading-[22px] text-[16px]  font-normal	">
-                          360
-                        </div>
-                        <div className="leading-[25px] text-[20px]  font-medium	">
-                          panarama
-                        </div>
+                      <div>
+                        <div className={style.nav2_item_1}>360</div>
+                        <div className={style.nav2_item_2}>panarama</div>
                       </div>
                     </Link>
                   </li>
                 )}
                 {props?.title2 == "video_editing" ? (
-                  <li className="px-10 text-[#ec1c38] text-white">
+                  <li className={style.nav2_item}>
                     <Link to="/home/video_editing" onClick={scrollToTop}>
-                      <div className="text-[#ec1c38]">
-                        <div className="leading-[22px] text-[16px]  font-normal	">
-                          Video
-                        </div>
-                        <div className="leading-[25px] text-[20px]  font-medium	">
-                          editing
-                        </div>
+                      <div>
+                        <div className={style.nav2_item_1}>Video</div>
+                        <div className={style.nav2_item_2}>editing</div>
                       </div>
                     </Link>
                   </li>
                 ) : (
-                  <li className="px-10 hover:text-[#ec1c38] text-white">
+                  <li className={style.nav2_item_hover}>
                     <Link to="/home/video_editing" onClick={scrollToTop}>
-                      <div className="text-[#fff] hover:text-[#ec1c38]">
-                        <div className="leading-[22px] text-[16px]  font-normal	">
-                          Video
-                        </div>
-                        <div className="leading-[25px] text-[20px]  font-medium	">
-                          editing
-                        </div>
+                      <div>
+                        <div className={style.nav2_item_1}>Video</div>
+                        <div className={style.nav2_item_2}>editing</div>
                       </div>
                     </Link>
                   </li>
@@ -355,192 +302,136 @@ const LayoutHeader = (props: Props) => {
               </ul>
             )}
             {props.title == "COMMERCIAL" && (
-              <ul className="flex cursor-pointer ">
+              <ul className={style.list_nav2_item}>
                 {props?.title2 == "photoediting" ? (
-                  <li className="px-10 text-[#ec1c38] text-white  	">
+                  <li className={style.nav2_item}>
                     <Link to="/home/photoediting" onClick={scrollToTop}>
-                      <div className="text-[#ec1c38]">
-                        <div className="leading-[22px] text-[16px]  font-normal	">
-                          Real Estate
-                        </div>
-                        <div className="leading-[25px] text-[20px]  font-medium	">
-                          Photo editing
-                        </div>
+                      <div>
+                        <div className={style.nav2_item_1}>Real Estate</div>
+                        <div className={style.nav2_item_2}>Photo editing</div>
                       </div>
                     </Link>
                   </li>
                 ) : (
-                  <li className="px-10 hover:text-[#ec1c38] text-white    	">
+                  <li className={style.nav2_item_hover}>
                     <Link to="/home/photoediting" onClick={scrollToTop}>
-                      <div className="text-[#fff] hover:text-[#ec1c38]">
-                        <div className="leading-[22px] text-[16px]  font-normal	">
-                          Real Estate
-                        </div>
-                        <div className="leading-[25px] text-[20px]  font-medium	">
-                          Photo editing
-                        </div>
+                      <div>
+                        <div className={style.nav2_item_1}>Real Estate</div>
+                        <div className={style.nav2_item_2}>Photo editing</div>
                       </div>
                     </Link>
                   </li>
                 )}
                 {props?.title2 == "daytotwilight" ? (
-                  <li className="px-10 text-[#ec1c38] text-white ">
+                  <li className={style.nav2_item}>
                     <Link to="/home/day_to_twilight" onClick={scrollToTop}>
-                      <div className="text-[#ec1c38]">
-                        <div className="leading-[22px] text-[16px]  font-normal	">
-                          Convert
-                        </div>
-                        <div className="leading-[25px] text-[20px]  font-medium	">
-                          Day to Twilight
-                        </div>
+                      <div>
+                        <div className={style.nav2_item_1}>Convert</div>
+                        <div className={style.nav2_item_2}>Day to Twilight</div>
                       </div>
                     </Link>
                   </li>
                 ) : (
-                  <li className="px-10 hover:text-[#ec1c38] text-white ">
+                  <li className={style.nav2_item_hover}>
                     <Link to="/home/day_to_twilight" onClick={scrollToTop}>
-                      <div className="text-[#fff] hover:text-[#ec1c38]">
-                        <div className="leading-[22px] text-[16px]  font-normal	">
-                          Convert
-                        </div>
-                        <div className="leading-[25px] text-[20px]  font-medium	">
-                          Day to Twilight
-                        </div>
+                      <div>
+                        <div className={style.nav2_item_1}>Convert</div>
+                        <div className={style.nav2_item_2}>Day to Twilight</div>
                       </div>
                     </Link>
                   </li>
                 )}
                 {props?.title2 == "retouching" ? (
-                  <li className="px-10 text-[#ec1c38] text-white">
+                  <li className={style.nav2_item}>
                     <Link to="/home/retouching" onClick={scrollToTop}>
-                      <div className="text-[#ec1c38]">
-                        <div className="leading-[22px] text-[16px]  font-normal	">
-                          Product
-                        </div>
-                        <div className="leading-[25px] text-[20px]  font-medium	">
-                          Retouching
-                        </div>
+                      <div>
+                        <div className={style.nav2_item_1}>Product</div>
+                        <div className={style.nav2_item_2}>Retouching</div>
                       </div>
                     </Link>
                   </li>
                 ) : (
-                  <li className="px-10 hover:text-[#ec1c38] text-white">
+                  <li className={style.nav2_item_hover}>
                     <Link to="/home/retouching" onClick={scrollToTop}>
-                      <div className="text-[#fff] hover:text-[#ec1c38]">
-                        <div className="leading-[22px] text-[16px]  font-normal	">
-                          Product
-                        </div>
-                        <div className="leading-[25px] text-[20px]  font-medium	">
-                          Retouching
-                        </div>
+                      <div>
+                        <div className={style.nav2_item_1}>Product</div>
+                        <div className={style.nav2_item_2}>Retouching</div>
                       </div>
                     </Link>
                   </li>
                 )}
                 {props?.title2 == "virtual_staging" ? (
-                  <li className="px-10 text-[#ec1c38] text-white">
+                  <li className={style.nav2_item}>
                     <Link to="/home/virtual_staging" onClick={scrollToTop}>
-                      <div className="text-[#ec1c38]">
-                        <div className="leading-[22px] text-[16px]  font-normal	">
-                          Virtual
-                        </div>
-                        <div className="leading-[25px] text-[20px]  font-medium	">
-                          Staging
-                        </div>
+                      <div>
+                        <div className={style.nav2_item_1}>Virtual</div>
+                        <div className={style.nav2_item_2}>Staging</div>
                       </div>
                     </Link>
                   </li>
                 ) : (
-                  <li className="px-10 hover:text-[#ec1c38] text-white">
+                  <li className={style.nav2_item_hover}>
                     <Link to="/home/virtual_staging" onClick={scrollToTop}>
-                      <div className="text-[#fff] hover:text-[#ec1c38]">
-                        <div className="leading-[22px] text-[16px]  font-normal	">
-                          Virtual
-                        </div>
-                        <div className="leading-[25px] text-[20px]  font-medium	">
-                          Staging
-                        </div>
+                      <div>
+                        <div className={style.nav2_item_1}>Virtual</div>
+                        <div className={style.nav2_item_2}>Staging</div>
                       </div>
                     </Link>
                   </li>
                 )}
                 {props?.title2 == "clipping_path" ? (
-                  <li className="px-10 text-[#ec1c38] text-white">
+                  <li className={style.nav2_item}>
                     <Link to="/home/clipping_path" onClick={scrollToTop}>
-                      <div className="text-[#ec1c38]">
-                        <div className="leading-[22px] text-[16px]  font-normal	">
-                          Clipping
-                        </div>
-                        <div className="leading-[25px] text-[20px]  font-medium	">
-                          Path
-                        </div>
+                      <div>
+                        <div className={style.nav2_item_1}>Clipping</div>
+                        <div className={style.nav2_item_2}>Path</div>
                       </div>
                     </Link>
                   </li>
                 ) : (
-                  <li className="px-10 hover:text-[#ec1c38] text-white">
+                  <li className={style.nav2_item_hover}>
                     <Link to="/home/clipping_path" onClick={scrollToTop}>
-                      <div className="text-[#fff] hover:text-[#ec1c38]">
-                        <div className="leading-[22px] text-[16px]  font-normal	">
-                          Clipping
-                        </div>
-                        <div className="leading-[25px] text-[20px]  font-medium	">
-                          Path
-                        </div>
+                      <div>
+                        <div className={style.nav2_item_1}>Clipping</div>
+                        <div className={style.nav2_item_2}>Path</div>
                       </div>
                     </Link>
                   </li>
                 )}
                 {props?.title2 == "720_panarama" ? (
-                  <li className="px-10 text-[#ec1c38] text-white">
+                  <li className={style.nav2_item}>
                     <Link to="/home/720_panarama" onClick={scrollToTop}>
-                      <div className="text-[#ec1c38]">
-                        <div className="leading-[22px] text-[16px]  font-normal	">
-                          360
-                        </div>
-                        <div className="leading-[25px] text-[20px]  font-medium	">
-                          panarama
-                        </div>
+                      <div>
+                        <div className={style.nav2_item_1}>360</div>
+                        <div className={style.nav2_item_2}>panarama</div>
                       </div>
                     </Link>
                   </li>
                 ) : (
-                  <li className="px-10 hover:text-[#ec1c38] text-white">
+                  <li className={style.nav2_item_hover}>
                     <Link to="/home/720_panarama" onClick={scrollToTop}>
-                      <div className="text-[#fff] hover:text-[#ec1c38]">
-                        <div className="leading-[22px] text-[16px]  font-normal	">
-                          360
-                        </div>
-                        <div className="leading-[25px] text-[20px]  font-medium	">
-                          panarama
-                        </div>
+                      <div>
+                        <div className={style.nav2_item_1}>360</div>
+                        <div className={style.nav2_item_2}>panarama</div>
                       </div>
                     </Link>
                   </li>
                 )}
                 {props?.title2 == "video_editing" ? (
-                  <li className="px-10 text-[#ec1c38] text-white">
+                  <li className={style.nav2_item}>
                     <Link to="/home/video_editing" onClick={scrollToTop}>
-                      <div className="text-[#ec1c38]">
-                        <div className="leading-[22px] text-[16px]  font-normal	">
-                          Video
-                        </div>
-                        <div className="leading-[25px] text-[20px]  font-medium	">
-                          editing
-                        </div>
+                      <div>
+                        <div className={style.nav2_item_1}>Video</div>
+                        <div className={style.nav2_item_2}>editing</div>
                       </div>
                     </Link>
                   </li>
                 ) : (
-                  <li className="px-10 hover:text-[#ec1c38] text-white">
+                  <li className={style.nav2_item_hover}>
                     <Link to="/home/video_editing" onClick={scrollToTop}>
-                      <div className="text-[#fff] hover:text-[#ec1c38]">
-                        <div className="leading-[22px] text-[16px]  font-normal	">
-                          Video
-                        </div>
-                        <div className="leading-[25px] text-[20px]  font-medium	">
-                          editing
-                        </div>
+                      <div>
+                        <div className={style.nav2_item_1}>Video</div>
+                        <div className={style.nav2_item_2}>editing</div>
                       </div>
                     </Link>
                   </li>
@@ -548,23 +439,23 @@ const LayoutHeader = (props: Props) => {
               </ul>
             )}
             {props.title == "RENDERS" && (
-              <ul className="flex cursor-pointer ">
-                <li className="px-10 hover:text-[#ec1c38] text-white  h-[43px] 	">
+              <ul className={style.list_nav2_item}>
+                <li className={style.nav2_item_hover}>
                   <Link to="/servives" onClick={scrollToTop}>
                     <p className="mt-2">EXTERIOR RENDERS</p>
                   </Link>
                 </li>
-                <li className="px-10 hover:text-[#ec1c38] text-white ">
+                <li className={style.nav2_item_hover}>
                   <Link to="/servives" onClick={scrollToTop}>
                     <p className="mt-2">INTERIOR RENDERS</p>
                   </Link>
                 </li>
-                <li className="px-10 hover:text-[#ec1c38] text-white">
+                <li className={style.nav2_item_hover}>
                   <Link to="/servives" onClick={scrollToTop}>
                     <p className="mt-2">360° RENDERS </p>
                   </Link>
                 </li>
-                <li className="px-10 hover:text-[#ec1c38] text-white">
+                <li className={style.nav2_item_hover}>
                   <Link to="/servives" onClick={scrollToTop}>
                     <p className="mt-2">360° VIRTUAL TOURS</p>
                   </Link>

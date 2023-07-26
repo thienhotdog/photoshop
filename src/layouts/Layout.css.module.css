@@ -21,7 +21,17 @@
 .img {
   width: 70px;
 }
+.imgs {
+  display: none;
+}
 .list_nav_item {
+  display: flex;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 40px;
+}
+.list_nav_items {
   display: flex;
   cursor: pointer;
   font-size: 20px;
@@ -42,8 +52,53 @@
   padding-left: 10px;
 }
 
+.header_2 {
+  padding: 10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 5px;
+  background-color: #008000;
+}
+.header_2_nav {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  width: 100%;
+  column-gap: 2.5rem;
+}
+.header_2_nav_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list_nav2_item {
+  display: flex;
+  cursor: pointer;
+}
+.nav2_item {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  color: #ec1c38;
+}
+.nav2_item_hover {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  color: #fff;
+}
+.nav2_item_hover:hover {
+  color: #ec1c38;
+}
+.nav2_item_1 {
+  line-height: 22px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.nav2_item_2 {
+  line-height: 25px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
 @media only screen and (max-width: 1600px) {
-  .list_nav_item {
+  .list_nav_item,
+  .list_nav_items {
     display: flex;
     cursor: pointer;
     font-size: 15px;
@@ -57,7 +112,8 @@
 }
 
 @media only screen and (max-width: 1300px) {
-  .list_nav_item {
+  .list_nav_item,
+  .list_nav_items {
     display: flex;
     cursor: pointer;
     font-size: 12px;
@@ -77,11 +133,15 @@
   .nav_item_hover {
     padding: 5px 10px;
   }
-  .list_nav_item {
-    display: flex;
-    cursor: pointer;
-    font-size: 11px;
-    font-weight: 700;
-    margin-left: 30px;
+  .list_nav_item,
+  .list_nav_items {
+    display: none;
+  }
+  .header_2 {
+    display: none;
+  }
+  .imgs {
+    width: 70px;
+    display: block;
   }
 }
