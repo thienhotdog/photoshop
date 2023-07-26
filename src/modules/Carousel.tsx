@@ -1,6 +1,7 @@
 import { DotPosition } from "antd/es/carousel";
 import { useState } from "react";
 import { Carousel, Col, Row } from "antd";
+import style from "./css/Carousel.module.css";
 // import before_1959 from "./../assets/Photoediting/91591.jpg";
 // import after_1959 from "./../assets/Photoediting/91592.jpg";
 import after_11245 from "./../assets/DaytoTwilight/11245.jpg";
@@ -20,18 +21,18 @@ const Carousels = () => {
             <div className="w-[49.85%]">
               <img src={before_1959} alt="" className="w-full" />
               <div className="w-full  bg-[#008000] place-items-center flex p-2 text-white">
-                <p className="text-[18px] font-bold">BEFORE</p>
+                <p className={style.text_banner}>BEFORE</p>
               </div>
             </div>
             <div className="w-[49.85%] ">
               <img src={after_1959} alt="" className="w-full" />
               <div className="bg-[#008000] text-white flex justify-between w-full p-2 px-5 ">
-                <p className="text-[18px] font-bold">
+                <p className={style.text_banner}>
                   Real Estate Photo editing
                 </p>
 
                 <div className="flex ">
-                  <p className="text-[18px] font-bold">AFTER</p>
+                  <p className={style.text_banner}>AFTER</p>
                 </div>
               </div>
             </div>
@@ -43,16 +44,16 @@ const Carousels = () => {
             <div className="w-[49.85%]">
               <img src={before_11245} alt="" className="w-full" />
               <div className="w-full  bg-[#008000] place-items-center flex p-2 text-white">
-                <p className="text-[18px] font-bold">BEFORE</p>
+                <p className={style.text_banner}>BEFORE</p>
               </div>
             </div>
             <div className="w-[49.85%] ">
               <img src={after_11245} alt="" className="w-full" />
               <div className="bg-[#008000] text-white flex justify-between w-full p-2 px-5 ">
-                <p className="text-[18px] font-bold">Convert Day To Twilight</p>
+                <p className={style.text_banner}>Convert Day To Twilight</p>
 
                 <div className="flex ">
-                  <p className="text-[18px] font-bold">AFTER</p>
+                  <p className={style.text_banner}>AFTER</p>
                 </div>
               </div>
             </div>
@@ -63,16 +64,16 @@ const Carousels = () => {
             <div className="w-[49.85%]">
               <img src={before_55} alt="" className="w-full" />
               <div className="w-full  bg-[#008000] place-items-center flex p-2 text-white">
-                <p className="text-[18px] font-bold">BEFORE</p>
+                <p className={style.text_banner}>BEFORE</p>
               </div>
             </div>
             <div className="w-[49.85%] ">
               <img src={after_55} alt="" className="w-full" />
               <div className="bg-[#008000] text-white flex justify-between w-full p-2 px-5 ">
-                <p className="text-[18px] font-bold">Product Retouching</p>
+                <p className={style.text_banner}>Product Retouching</p>
 
                 <div className="flex ">
-                  <p className="text-[18px] font-bold">AFTER</p>
+                  <p className={style.text_banner}>AFTER</p>
                 </div>
               </div>
             </div>
@@ -83,16 +84,16 @@ const Carousels = () => {
             <div className="w-[49.85%]">
               <img src={before_1} alt="" className="w-full" />
               <div className="w-full  bg-[#008000] place-items-center flex p-2 text-white">
-                <p className="text-[18px] font-bold">BEFORE</p>
+                <p className={style.text_banner}>BEFORE</p>
               </div>
             </div>
             <div className="w-[49.85%] ">
               <img src={after_1} alt="" className="w-full" />
               <div className="bg-[#008000] text-white flex justify-between w-full p-2 px-5 ">
-                <p className="text-[18px] font-bold">Virtual Staging</p>
+                <p className={style.text_banner}>Virtual Staging</p>
 
                 <div className="flex ">
-                  <p className="text-[18px] font-bold">AFTER</p>
+                  <p className={style.text_banner}>AFTER</p>
                 </div>
               </div>
             </div>
@@ -103,16 +104,16 @@ const Carousels = () => {
             <div className="w-[49.85%]">
               <img src={before_product} alt="" className="w-full" />
               <div className="w-full  bg-[#008000] place-items-center flex p-2 text-white">
-                <p className="text-[18px] font-bold">BEFORE</p>
+                <p className={style.text_banner}>BEFORE</p>
               </div>
             </div>
             <div className="w-[49.85%] ">
               <img src={after_product} alt="" className="w-full" />
               <div className="bg-[#008000] text-white flex justify-between w-full p-2 px-5 ">
-                <p className="text-[18px] font-bold">Clipping Path</p>
+                <p className={style.text_banner}>Clipping Path</p>
 
                 <div className="flex ">
-                  <p className="text-[18px] font-bold">AFTER</p>
+                  <p className={style.text_banner}>AFTER</p>
                 </div>
               </div>
             </div>
@@ -123,16 +124,16 @@ const Carousels = () => {
             <div className="w-[49.85%]">
               <img src={before_product} alt="" className="w-full" />
               <div className="w-full  bg-[#008000] place-items-center flex p-2 text-white">
-                <p className="text-[18px] font-bold">BEFORE</p>
+                <p className={style.text_banner}>BEFORE</p>
               </div>
             </div>
             <div className="w-[49.85%] ">
               <img src={after_product} alt="" className="w-full" />
               <div className="bg-[#008000] text-white flex justify-between w-full p-2 px-5 ">
-                <p className="text-[18px] font-bold">360 panarama</p>
+                <p className={style.text_banner}>360 panarama</p>
 
                 <div className="flex ">
-                  <p className="text-[18px] font-bold">AFTER</p>
+                  <p className={style.text_banner}>AFTER</p>
                 </div>
               </div>
             </div>
