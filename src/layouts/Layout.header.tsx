@@ -255,7 +255,7 @@ const LayoutHeader = (props: Props) => {
                 <img
                   src="https://d1dbtne32ilur4.cloudfront.net/img/flags/US.svg"
                   alt=""
-                  width={36}
+                  className={style.img}
                 />
               </Link>
               <span className={style.span}> United States</span>
