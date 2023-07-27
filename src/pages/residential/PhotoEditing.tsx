@@ -168,19 +168,6 @@ const Photoediting = () => {
 
       {/* GET STARTED IN UNDER 60 SECONDS */}
       <div>
-        <div className="flex">
-          <div className=" p-[15px] md:p-[30px]  bg-[#999999] w-1/2 text-end  ">
-            <p className="text-[#ec1c38] md:text-[30px] lg:text-[40px]">
-              GET STARTED IN UNDER
-            </p>
-            <p className="text-[#ffffff] md:text-[50px] lg:text-[60px] ">
-              60 SECONDS
-            </p>
-          </div>
-          <div className=" bg-black border-b-2 border-b-indigo-500  w-1/2  ">
-            <p>First Name</p>
-          </div>
-        </div>
         <ThisWhatWeDo onClick={() => showMenus()} />
         <div className="py-5 text-center text-[36px] border-b-[1px] border-gray-500">
           <h2>FEATURED IN</h2>
