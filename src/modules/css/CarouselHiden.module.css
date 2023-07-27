@@ -1,6 +1,3 @@
-/* ul > li {
-  display: none;
-} */
-.ant-carousel .slick-dots-top {
-  display: none !important;
+.carousel:hover {
+  cursor: pointer;
 }

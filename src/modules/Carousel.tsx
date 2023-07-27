@@ -60,7 +60,7 @@ const Carousels = () => {
   };
   return (
     <div>
-      <Row justify="center">
+      <Row justify="center" className={style.carousel}>
         <Col span={24}>
           <Carousel draggable dots={false} arrows {...settings}>
             <div>
