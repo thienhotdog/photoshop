@@ -63,7 +63,7 @@ const CarouselHiden = () => {
       <Row justify="center">
         <Col span={24}>
           <Carousel autoplay draggable dotPosition="top">
-            <div>
+            <div className="hover:cursor-pointer">
               <div className="flex justify-between">
                 <div className="w-[49.85%]">
                   <img src={before_1959} alt="" className="w-full" />
@@ -86,7 +86,7 @@ const CarouselHiden = () => {
               </div>
             </div>
 
-            <div>
+            <div className="hover:cursor-pointer">
               <div className="flex justify-between">
                 <div className="w-[49.85%]">
                   <img src={before_11245} alt="" className="w-full" />
@@ -106,7 +106,7 @@ const CarouselHiden = () => {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="hover:cursor-pointer">
               <div className="flex justify-between">
                 <div className="w-[49.85%]">
                   <img src={before_55} alt="" className="w-full" />
@@ -126,7 +126,7 @@ const CarouselHiden = () => {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="hover:cursor-pointer">
               <div className="flex justify-between">
                 <div className="w-[49.85%]">
                   <img src={before_1} alt="" className="w-full" />
@@ -146,7 +146,7 @@ const CarouselHiden = () => {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="hover:cursor-pointer">
               <div className="flex justify-between">
                 <div className="w-[49.85%]">
                   <img src={before_product} alt="" className="w-full" />
@@ -166,7 +166,7 @@ const CarouselHiden = () => {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="hover:cursor-pointer">
               <div className="flex justify-between">
                 <div className="w-[49.85%]">
                   <img src={before_product} alt="" className="w-full" />
