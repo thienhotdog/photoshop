@@ -16,9 +16,24 @@ import left from "./../assets/left.png";
 import right from "./../assets/right.png";
 
 const Carousels = () => {
-  const carousel: any = createRef<any>();
-  const next = () => {
-    carousel.next();
+  const SamplePrevArrow = (props: any) => {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          display: "block",
+          zIndex: 2,
+          left: 5,
+          width: 50,
+          height: 50
+        }}
+        onClick={onClick}
+      >
+        <img src={left} alt="" width={50} height={50} />
+      </div>
+    );
   };
   const SampleNextArrow = (props: any) => {
     const { className, style, onClick } = props;
@@ -28,9 +43,7 @@ const Carousels = () => {
         style={{
           ...style,
           display: "block",
-          position: "absolute",
           right: 5,
-          zIndex: 1000,
           width: 50,
           height: 50
         }}
@@ -40,27 +53,7 @@ const Carousels = () => {
       </div>
     );
   };
-  const SamplePrevArrow = (props: any) => {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{
-          ...style,
-          display: "block",
-          position: "absolute",
-          left: 5,
-          zIndex: 1000,
-          width: 50,
 
-          height: 50
-        }}
-        onClick={onClick}
-      >
-        <img src={left} alt="" />
-      </div>
-    );
-  };
   const settings = {
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />
