@@ -3,8 +3,8 @@ import style from "./Layout.css.module.css";
 import logo from "./../assets/anh mau/lo go/Lo go An Binh.png";
 import { useEffect, useState } from "react";
 import menu from "./../assets/menu.png";
-import right from "./../assets/right.png";
-import left from "./../assets/left.png";
+import right from "./../assets/right_1.png";
+import left from "./../assets/left_1.png";
 
 type Props = {
   title: string;
