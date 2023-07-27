@@ -10,13 +10,8 @@ import change from "./../../assets/change.png";
 import real from "./../../assets/real.png";
 import copy from "./../../assets/copy.png";
 import free from "./../../assets/free.png";
-import before_9045 from "./../../assets/Photoediting/9045.jpg";
-import after_9045 from "./../../assets/Photoediting/9046.jpg";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import style from "./../css/PhotoEditting.module.css";
-import Carousel from "react-simply-carousel";
-import * as ReactDOMClient from "react-dom/client";
 import Modal from "antd/es/modal/Modal";
 import CarouselsOne from "../../modules/CarouselOne";
 const Photoediting = () => {
@@ -25,7 +20,7 @@ const Photoediting = () => {
     console.log("dsg");
     setShow(true);
   };
-  const [activeSlide, setActiveSlide] = useState(0);
+
   return (
     <div>
       {show == true && (
