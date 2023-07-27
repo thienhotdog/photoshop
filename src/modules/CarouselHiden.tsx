@@ -59,7 +59,7 @@ const CarouselHiden = () => {
     prevArrow: <SamplePrevArrow />
   };
   return (
-    <div className={style.hidden}>
+    <div>
       <Row justify="center">
         <Col span={24}>
           <Carousel dots={false} arrows={true} draggable={true}>
