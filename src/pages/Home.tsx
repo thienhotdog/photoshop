@@ -157,7 +157,7 @@ const Home = () => {
                 <h3 className="text-[#333] font-bold text-[21px] pt-5 pb-2">
                   Privacy & Security
                 </h3>
-                <p className="text-[#4f4f4f] text-[18px] font-normal	">
+                <p className="text-[#4f4f4f] text-[18px] font-normal">
                   Your photos will not be published to any third party without
                   your permission
                 </p>

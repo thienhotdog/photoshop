@@ -62,7 +62,7 @@ const CarouselHiden = () => {
     <div>
       <Row justify="center">
         <Col span={24}>
-          <Carousel autoplay dots={false} arrows={true} draggable={true}>
+          <Carousel autoplay dotPosition="top">
             <div>
               <div className="flex justify-between">
                 <div className="w-[49.85%]">
