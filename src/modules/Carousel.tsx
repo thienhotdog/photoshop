@@ -62,7 +62,7 @@ const Carousels = () => {
     <div>
       <Row justify="center" className={style.carousel}>
         <Col span={24}>
-          <Carousel draggable dots={false} arrows {...settings}>
+          <Carousel autoplay draggable dots={false} arrows {...settings}>
             <div>
               <div className="flex justify-between">
                 <div className="w-[49.85%]">
