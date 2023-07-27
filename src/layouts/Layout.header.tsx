@@ -12,18 +12,9 @@ type Props = {
 };
 
 const LayoutHeader = (props: Props) => {
-  const [showButton, setShowButton] = useState<boolean>(false);
   const [showMenuServices, setShowMenuServices] = useState<boolean>(false);
   const [showMenu, setShowMenu] = useState<boolean>(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 300) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
-    });
-  }, []);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,

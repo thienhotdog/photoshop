@@ -1,4 +1,4 @@
-import { Col, Row } from "antd";
+import { Col, Modal, Row } from "antd";
 import Investors from "../../modules/Investors";
 import ThisWhatWeDo from "../../modules/ThisWhatWeDo";
 import Carousels from "../../modules/Carousel";
@@ -11,10 +11,26 @@ import real from "./../../assets/real.png";
 import copy from "./../../assets/copy.png";
 import free from "./../../assets/free.png";
 import Style from "./../../layouts/Layout.css.module.css";
+import CarouselHiden from "../../modules/CarouselHiden";
+import { useState } from "react";
 
 const VideoEditing = () => {
+  const [show, setShow] = useState<boolean>(false);
+  const showMenus = () => {
+    console.log("dsg");
+    setShow(true);
+  };
   return (
     <>
+      <Modal
+        open={show}
+        centered
+        footer={null}
+        width={"80%"}
+        onCancel={() => setShow(false)}
+      >
+        <CarouselHiden />
+      </Modal>
       <LayoutHeader title="" title2="video_editing" />
       {/* banner */}
       <Carousels />
@@ -141,23 +157,9 @@ const VideoEditing = () => {
           </Row>
         </div>
       </div>
-
       {/* GET STARTED IN UNDER 60 SECONDS */}
       <div>
-        <div className="flex">
-          <div className=" p-[15px] md:p-[30px]  bg-[#999999] w-1/2 text-end  ">
-            <p className="text-[#ec1c38] md:text-[30px] lg:text-[40px]">
-              GET STARTED IN UNDER
-            </p>
-            <p className="text-[#ffffff] md:text-[50px] lg:text-[60px] ">
-              60 SECONDS
-            </p>
-          </div>
-          <div className=" bg-black border-b-2 border-b-indigo-500  w-1/2  ">
-            <p>First Name</p>
-          </div>
-        </div>
-        <ThisWhatWeDo />
+        <ThisWhatWeDo showMenus={() => showMenus()} />
         <div className="py-5 text-center text-[36px] border-b-[1px] border-gray-500">
           <h2>FEATURED IN</h2>
           <Row justify="space-between" className="px-[15%] ">
@@ -354,7 +356,6 @@ const VideoEditing = () => {
         <div className="border-b-[1px] border-gray-500 py-3 bg-[#f6f6f6]" />
       </div>
       {/* ABOUT US */}
-
       <div className={`${Style.media} 2xl:mx-[9%] xl:mx-[5%] xl:mx-[1.5%]`}>
         <Row justify="space-between">
           <Col xl={{ span: 12 }} lg={0}>

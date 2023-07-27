@@ -24,17 +24,16 @@ const Photoediting = () => {
 
   return (
     <div>
-      {show == true && (
-        <Modal
-          open={show}
-          centered
-          footer={null}
-          width={"80%"}
-          onCancel={() => setShow(false)}
-        >
-          <CarouselHiden />
-        </Modal>
-      )}
+      <Modal
+        open={show}
+        centered
+        footer={null}
+        width={"80%"}
+        onCancel={() => setShow(false)}
+      >
+        <CarouselHiden />
+      </Modal>
+
       <LayoutHeader title="" title2="photoediting" />
       {/* banner */}
       <CarouselsOne />
@@ -164,7 +163,7 @@ const Photoediting = () => {
 
       {/* GET STARTED IN UNDER 60 SECONDS */}
       <div>
-        <ThisWhatWeDo onClick={() => showMenus()} />
+        <ThisWhatWeDo showMenus={() => showMenus()} />
         <div className="py-5 text-center text-[36px] border-b-[1px] border-gray-500">
           <h2>FEATURED IN</h2>
           <Row justify="space-between" className="px-[15%] ">
