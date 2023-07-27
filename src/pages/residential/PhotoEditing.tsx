@@ -27,8 +27,8 @@ const Photoediting = () => {
         <Modal
           open={show}
           centered
-          width={1800}
           footer={null}
+          width={"80%"}
           onCancel={() => setShow(false)}
         >
           <Carousels />
