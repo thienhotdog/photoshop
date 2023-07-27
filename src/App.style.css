@@ -95,3 +95,21 @@ body {
   background: #eef0f4;
   box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
 }
+
+.ant-carousel .slick-dots li {
+  height: 10px !important;
+
+  background: green !important;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  background: red !important;
+  opacity: 1;
+}
+.ant-carousel .slick-dots li button {
+  background: green !important;
+  color: green !important;
+}
+.ant-carousel .slick-dots li.slick-active {
+  background: red !important;
+}

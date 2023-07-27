@@ -152,41 +152,7 @@ const LayoutFooter = () => {
                   </div>
                 </div>
               </div>
-              <div className={style.footer_info_item}>
-                <div className={style.footer_info_icon}>
-                  <img
-                    src="https://fotosolution.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpin-icon.1e3d3881.png&w=32&q=75"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <h3 className={style.footer_info_title}>
-                    United States Office
-                  </h3>
-                  <div className={style.footer_info_desc}>
-                    <p>Address: 131a highland st, worcester,ma,01609</p>
-                    <p>Office manager: Jason Nguyen.</p>
-                    <p>Mobile: 7746412965</p>
-                    <p>Email: jasonnguyen@fotosolution.com</p>
-                  </div>
-                </div>
-              </div>
-              <div className={style.footer_info_item}>
-                <div className={style.footer_info_icon}>
-                  <img
-                    src="https://fotosolution.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpin-icon.1e3d3881.png&w=32&q=75"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <h3 className={style.footer_info_title}>Second Office</h3>
-                  <div className={style.footer_info_desc}>
-                    <p>
-                      TrucThang, Truc Ninh District, Nam Dinh City, VIet Nam
-                    </p>
-                  </div>
-                </div>
-              </div>
+
               <div className={style.footer_info_item}>
                 <div className={style.footer_info_icon}>
                   <img
@@ -210,21 +176,6 @@ const LayoutFooter = () => {
                 <div>
                   <div className={style.footer_info_desc}>
                     <p>contact@fotosolution.com</p>
-                  </div>
-                </div>
-              </div>
-              <div className={style.footer_info_item}>
-                <div className={style.footer_info_icon}>
-                  <img
-                    src="https://fotosolution.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Femail-icon.e759b174.png&w=32&q=75"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <h3 className={style.footer_info_title}>Opening Hours</h3>
-                  <div className={style.footer_info_desc}>
-                    <p>Monday- Friday: 9.00 AM – 18.00 PM</p>
-                    <p>Saturday – Sunday: 9.00 AM – 12:00 PM</p>
                   </div>
                 </div>
               </div>
@@ -259,16 +210,6 @@ const LayoutFooter = () => {
                     <li className={style.quick_link_item}>
                       <Link to="/" className={style.quick_link}>
                         Our Blogs
-                      </Link>
-                    </li>
-                    <li className={style.quick_link_item}>
-                      <Link to="/" className={style.quick_link}>
-                        Privacy Policy
-                      </Link>
-                    </li>
-                    <li className={style.quick_link_item}>
-                      <Link to="/" className={style.quick_link}>
-                        Term Of Service
                       </Link>
                     </li>
                   </ul>

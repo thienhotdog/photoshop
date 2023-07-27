@@ -14,7 +14,10 @@ import Carousels from "../modules/Carousel";
 import ThisWhatWeDo from "../modules/ThisWhatWeDo";
 import about from "./../assets/344165734_2693164097508508_5567145660358150876_n.jpg";
 import Investors from "../modules/Investors";
-
+import upload from "./../assets/upload.png";
+import edit from "./../assets/edit.jpg";
+import review from "./../assets/review.jpg";
+import dowload from "./../assets/dowload.png";
 const Home = () => {
   const onChange = (currentSlide: number) => {
     console.log(currentSlide);
@@ -191,9 +194,113 @@ const Home = () => {
       <div>
         <ThisWhatWeDo />
       </div>
+      {/* 4 bước */}
+      <div className="bg-[#f6f6f6] py-[80px] ">
+        <div className="mx-[6%] ">
+          <Row justify="space-between">
+            <Col
+              xs={{ span: 24 }}
+              sm={{ span: 11 }}
+              lg={{ span: 5 }}
+              className="py-5 bg-white text-center mt-3	border-solid	border-1 border-[#e9e9ea] shadow "
+            >
+              <div className="flex justify-center pb-3">
+                <img
+                  src={upload}
+                  alt=""
+                  width={120}
+                  height={111}
+                  className="object-contain	"
+                />
+              </div>
+              <b className="text-red-500 font-bold text-[21px] font-bold">
+                STEP 1
+              </b>
+              <h3 className="text-[21px] font-bold mb-5">UPLOAD</h3>
+              <p className="mx-3 text-[#4f4f4f] text-[18px] font-normal">
+                Upload your photos from your mobile, tablet or desktop computer.
+              </p>
+            </Col>
+            <Col
+              xs={{ span: 24 }}
+              sm={{ span: 11 }}
+              lg={{ span: 5 }}
+              className="py-5 bg-white text-center mt-3	border-solid	border-1 border-[#e9e9ea] shadow "
+            >
+              <div className="flex justify-center pb-3">
+                <img
+                  src={edit}
+                  alt=""
+                  width={120}
+                  height={111}
+                  className="object-contain	"
+                />
+              </div>
+              <b className="text-red-500 font-bold text-[21px] font-bold">
+                STEP 2
+              </b>
+              <h3 className="text-[21px] font-bold mb-5">WE EDIT</h3>
+              <p className="mx-3 text-[#4f4f4f] text-[18px] font-normal">
+                Our global team of photo editing experts will enhance your
+                images within 12 hours. 99.8% satisfaction guaranteed.
+              </p>
+            </Col>
+            <Col
+              xs={{ span: 24 }}
+              sm={{ span: 11 }}
+              lg={{ span: 5 }}
+              className="py-5 bg-white text-center mt-3	border-solid	border-1 border-[#e9e9ea] shadow"
+            >
+              <div className="flex justify-center pb-3">
+                <img
+                  src={review}
+                  alt=""
+                  width={120}
+                  height={111}
+                  className="object-contain	"
+                />
+              </div>
+              <b className="text-red-500 font-bold text-[21px] font-bold">
+                STEP 3
+              </b>
+              <h3 className="text-[21px] font-bold mb-5">QUALITY ASSURANCE</h3>
+              <p className="mx-3 text-[#4f4f4f] text-[18px] font-normal">
+                We have a dedicated quality control team to ensure editing is
+                performed to the highest of standards.
+              </p>
+            </Col>
+            <Col
+              xs={{ span: 24 }}
+              sm={{ span: 11 }}
+              lg={{ span: 5 }}
+              className="py-5 bg-white text-center mt-3	border-solid	border-1 border-[#e9e9ea] shadow "
+            >
+              <div className="flex justify-center pb-3">
+                <img
+                  src={dowload}
+                  alt=""
+                  width={120}
+                  height={111}
+                  className="object-contain	"
+                />
+              </div>
+              <b className="text-red-500 font-bold text-[21px] font-bold">
+                STEP 4
+              </b>
+              <h3 className="text-[21px] font-bold mb-5">READY!</h3>
+              <p className="mx-3 text-[#4f4f4f] text-[18px] font-normal">
+                Download the professionally edited images from your account as
+                soon as they are complete.
+              </p>
+            </Col>
+          </Row>
+        </div>
+      </div>
       {/* ABOUT US */}
 
-      <div className={`${Style.media} 2xl:mx-[9%] xl:mx-[5%] xl:mx-[1.5%]`}>
+      <div
+        className={`${Style.media} 2xl:mx-[9%] xl:mx-[5%] xl:mx-[1.5%] mb-[80px]`}
+      >
         <Row justify="space-between">
           <Col lg={{ span: 24 }} xl={{ span: 12 }}>
             <div className="mt-10 text-start mx-[10%]">

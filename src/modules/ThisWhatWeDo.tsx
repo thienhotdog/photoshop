@@ -17,7 +17,7 @@ import after_20230207_joanna from "./../assets/ClippingPath/20230207-DYConsultan
 
 import { Link } from "react-router-dom";
 
-const ThisWhatWeDo = () => {
+const ThisWhatWeDo = (props: any) => {
   return (
     <div className=" pb-2">
       <h3 className="pt-[60px] text-center  text-[40px] font-bold">
@@ -26,32 +26,33 @@ const ThisWhatWeDo = () => {
       <div className="mx-[6%] mt-10">
         <Row gutter={32}>
           <Col md={{ span: 24 }} lg={{ span: 12 }} className="py-5   ">
-            <div className="w-full overflow-hidden cursor-pointer">
-              <Link to="/home/photoediting">
-                <div className="flex justify-between  transition duration-1000  hover:scale-110 ">
-                  <div className="max-w-[49.85%] max-h-[500px]">
-                    <img src={before_9045} alt="" />
-                  </div>
-                  <div className="max-w-[49.85%] ">
-                    <img src={after_9045} alt="" />
-                  </div>
+            <div
+              className="w-full overflow-hidden cursor-pointer"
+              onClick={() => props.onClick()}
+            >
+              <div className="flex justify-between  transition duration-1000  hover:scale-110 ">
+                <div className="max-w-[49.85%] max-h-[500px]">
+                  <img src={before_9045} alt="" />
                 </div>
-              </Link>
+                <div className="max-w-[49.85%] ">
+                  <img src={after_9045} alt="" />
+                </div>
+              </div>
             </div>
 
             <div className="w-full">
               <div className="flex justify-between">
                 <div className="w-[49.85%]">
-                  <div className="w-full  bg-[#008000] place-items-center flex p-2 text-white">
-                    <p className="w-[20px] h-[20px] bg-red-500 mr-2" />
+                  <div className="w-full  bg-[#008000] place-items-center flex p-2 text-white font-bold">
+                    <p className="w-[15px] h-[15px] bg-red-500 mr-2" />
                     <p>BEFORE</p>
                   </div>
                 </div>
                 <div className="w-[49.85%] ">
                   <div className="bg-[#008000] text-white flex justify-end w-full p-2 px-5 ">
-                    <div className="flex ">
+                    <div className="flex items-center font-bold">
                       <p>AFTER</p>
-                      <p className="w-[20px] h-[20px] bg-red-500 ml-2" />
+                      <p className="w-[15px] h-[15px] bg-red-500 ml-2" />
                     </div>
                   </div>
                 </div>
@@ -87,16 +88,16 @@ const ThisWhatWeDo = () => {
             <div className="w-full">
               <div className="flex justify-between">
                 <div className="w-[49.85%]">
-                  <div className="w-full  bg-[#008000] place-items-center flex p-2 text-white">
-                    <p className="w-[20px] h-[20px] bg-red-500 mr-2" />
+                  <div className="w-full  bg-[#008000] place-items-center flex p-2 text-white font-bold">
+                    <p className="w-[15px] h-[15px] bg-red-500 mr-2" />
                     <p>BEFORE</p>
                   </div>
                 </div>
                 <div className="w-[49.85%] ">
                   <div className="bg-[#008000] text-white flex justify-end w-full p-2 px-5 ">
-                    <div className="flex ">
+                    <div className="flex items-center font-bold ">
                       <p>AFTER</p>
-                      <p className="w-[20px] h-[20px] bg-red-500 ml-2" />
+                      <p className="w-[15px] h-[15px] bg-red-500 ml-2" />
                     </div>
                   </div>
                 </div>
@@ -133,16 +134,16 @@ const ThisWhatWeDo = () => {
             <div className="w-full">
               <div className="flex justify-between">
                 <div className="w-[49.85%]">
-                  <div className="w-full  bg-[#008000] place-items-center flex p-2 text-white">
-                    <p className="w-[20px] h-[20px] bg-red-500 mr-2" />
+                  <div className="w-full  bg-[#008000] place-items-center flex p-2 text-white font-bold">
+                    <p className="w-[15px] h-[15px] bg-red-500 mr-2" />
                     <p>BEFORE</p>
                   </div>
                 </div>
                 <div className="w-[49.85%] ">
                   <div className="bg-[#008000] text-white flex justify-end w-full p-2 px-5 ">
-                    <div className="flex ">
+                    <div className="flex items-center font-bold">
                       <p>AFTER</p>
-                      <p className="w-[20px] h-[20px] bg-red-500 ml-2" />
+                      <p className="w-[15px] h-[15px] bg-red-500 ml-2" />
                     </div>
                   </div>
                 </div>
@@ -178,16 +179,16 @@ const ThisWhatWeDo = () => {
             <div className="w-full">
               <div className="flex justify-between">
                 <div className="w-[49.85%]">
-                  <div className="w-full  bg-[#008000] place-items-center flex p-2 text-white">
-                    <p className="w-[20px] h-[20px] bg-red-500 mr-2" />
+                  <div className="w-full  bg-[#008000] place-items-center flex p-2 text-white font-bold">
+                    <p className="w-[15px] h-[15px] bg-red-500 mr-2" />
                     <p>BEFORE</p>
                   </div>
                 </div>
                 <div className="w-[49.85%] ">
                   <div className="bg-[#008000] text-white flex justify-end w-full p-2 px-5 ">
-                    <div className="flex ">
+                    <div className="flex items-center font-bold">
                       <p>AFTER</p>
-                      <p className="w-[20px] h-[20px] bg-red-500 ml-2" />
+                      <p className="w-[15px] h-[15px] bg-red-500 ml-2" />
                     </div>
                   </div>
                 </div>
@@ -223,16 +224,16 @@ const ThisWhatWeDo = () => {
             <div className="w-full">
               <div className="flex justify-between">
                 <div className="w-[49.85%]">
-                  <div className="w-full  bg-[#008000] place-items-center flex p-2 text-white">
-                    <p className="w-[20px] h-[20px] bg-red-500 mr-2" />
+                  <div className="w-full  bg-[#008000] place-items-center flex p-2 text-white font-bold">
+                    <p className="w-[15px] h-[15px] bg-red-500 mr-2" />
                     <p>BEFORE</p>
                   </div>
                 </div>
                 <div className="w-[49.85%] ">
                   <div className="bg-[#008000] text-white flex justify-end w-full p-2 px-5 ">
-                    <div className="flex ">
+                    <div className="flex font-bold items-center">
                       <p>AFTER</p>
-                      <p className="w-[20px] h-[20px] bg-red-500 ml-2" />
+                      <p className="w-[15px] h-[15px] bg-red-500 ml-2" />
                     </div>
                   </div>
                 </div>
@@ -266,16 +267,16 @@ const ThisWhatWeDo = () => {
             <div className="w-full">
               <div className="flex justify-between">
                 <div className="w-[49.85%]">
-                  <div className="w-full  bg-[#008000] place-items-center flex p-2 text-white">
-                    <p className="w-[20px] h-[20px] bg-red-500 mr-2" />
+                  <div className="w-full  bg-[#008000] place-items-center flex p-2 text-white font-bold">
+                    <p className="w-[15px] h-[15px] bg-red-500 mr-2" />
                     <p>BEFORE</p>
                   </div>
                 </div>
                 <div className="w-[49.85%] ">
                   <div className="bg-[#008000] text-white flex justify-end w-full p-2 px-5 ">
-                    <div className="flex ">
+                    <div className="flex items-center font-bold">
                       <p>AFTER</p>
-                      <p className="w-[20px] h-[20px] bg-red-500 ml-2" />
+                      <p className="w-[15px] h-[15px] bg-red-500 ml-2" />
                     </div>
                   </div>
                 </div>

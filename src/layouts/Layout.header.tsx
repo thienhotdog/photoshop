@@ -232,18 +232,6 @@ const LayoutHeader = (props: Props) => {
             </ul>
           </div>
           <div className="flex items-center">
-            <ul className={style.list_nav_items}>
-              <li className={style.nav_item_hover}>
-                <Link to="/" onClick={scrollToTop}>
-                  <p>LOGIN</p>
-                </Link>
-              </li>
-              <li className={style.nav_item_hover}>
-                <Link to="/" onClick={scrollToTop}>
-                  <p>SIGN UP</p>
-                </Link>
-              </li>
-            </ul>
             <div className="flex items-center">
               <img
                 src={menu}
@@ -251,19 +239,12 @@ const LayoutHeader = (props: Props) => {
                 className={style.imgs}
                 onClick={showMenus}
               />
-              <Link to="">
-                <img
-                  src="https://d1dbtne32ilur4.cloudfront.net/img/flags/US.svg"
-                  alt=""
-                  className={style.img}
-                />
-              </Link>
-              <span className={style.span}> United States</span>
             </div>
           </div>
         </div>
       </div>
       {/* header2 */}
+
       <div className={style.header_2}>
         <div className={style.header_2_nav}>
           <div className={style.header_2_nav_div}>

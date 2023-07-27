@@ -10,14 +10,38 @@ import change from "./../../assets/change.png";
 import real from "./../../assets/real.png";
 import copy from "./../../assets/copy.png";
 import free from "./../../assets/free.png";
-import Style from "./../../layouts/Layout.css.module.css";
-
+import before_9045 from "./../../assets/Photoediting/9045.jpg";
+import after_9045 from "./../../assets/Photoediting/9046.jpg";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import style from "./../css/PhotoEditting.module.css";
+import Carousel from "react-simply-carousel";
+import * as ReactDOMClient from "react-dom/client";
+import Modal from "antd/es/modal/Modal";
+import CarouselsOne from "../../modules/CarouselOne";
 const Photoediting = () => {
+  const [show, setShow] = useState<boolean>(false);
+  const showMenus = () => {
+    console.log("dsg");
+    setShow(true);
+  };
+  const [activeSlide, setActiveSlide] = useState(0);
   return (
-    <>
+    <div>
+      {show == true && (
+        <Modal
+          open={show}
+          centered
+          width={1800}
+          footer={null}
+          onCancel={() => setShow(false)}
+        >
+          <Carousels />
+        </Modal>
+      )}
       <LayoutHeader title="" title2="photoediting" />
       {/* banner */}
-      <Carousels />
+      <CarouselsOne />
       {/* Professional Photo Editing, Virtual Staging, Floor Plan Redraws, &Renders at Unbeatable Prices */}
       <div className="my-10 mx-[9%] ">
         <div className="text-center text-[28px]  ">
@@ -157,7 +181,7 @@ const Photoediting = () => {
             <p>First Name</p>
           </div>
         </div>
-        <ThisWhatWeDo />
+        <ThisWhatWeDo onClick={() => showMenus()} />
         <div className="py-5 text-center text-[36px] border-b-[1px] border-gray-500">
           <h2>FEATURED IN</h2>
           <Row justify="space-between" className="px-[15%] ">
@@ -355,7 +379,7 @@ const Photoediting = () => {
       </div>
       {/* ABOUT US */}
 
-      <div className={`${Style.media} 2xl:mx-[9%] xl:mx-[5%] xl:mx-[1.5%]`}>
+      <div className={`${style.media} 2xl:mx-[9%] xl:mx-[5%] xl:mx-[1.5%]`}>
         <Row justify="space-between">
           <Col xl={{ span: 12 }} lg={0}>
             <div className="mt-20">
@@ -406,7 +430,7 @@ const Photoediting = () => {
         </Row>
       </div>
       <LayoutFooter />
-    </>
+    </div>
   );
 };
 export default Photoediting;

@@ -30,14 +30,14 @@
 .list_nav_item {
   display: flex;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 700;
   margin-left: 40px;
 }
 .list_nav_items {
   display: flex;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   margin-left: 40px;
 }
@@ -78,7 +78,7 @@
 .nav2_item {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-  color: #ec1c38;
+  color: #ffcc00;
 }
 .nav2_item_hover {
   padding-left: 2.5rem;
@@ -86,7 +86,7 @@
   color: #fff;
 }
 .nav2_item_hover:hover {
-  color: #ec1c38;
+  color: #dddddd;
 }
 .nav2_item_1 {
   line-height: 22px;
@@ -244,17 +244,17 @@
 
   .animation {
     animation-name: example;
-    animation-duration: 2s;
+    animation-duration: 0s;
   }
   .animations {
     animation-name: examples;
-    animation-duration: 2s;
+    animation-duration: 0s;
   }
   @keyframes example {
     from {
       opacity: 0;
-      transform: translateX(0);
-      transition: 1s;
+      transform: translateX(-100%);
+      transition: 0s;
     }
     to {
       opacity: 1;
@@ -270,7 +270,7 @@
     }
     to {
       opacity: 1;
-      transform: translateX(0);
+      transform: translateX(100%);
       transition: 0.5s;
     }
   }

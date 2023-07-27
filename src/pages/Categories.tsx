@@ -1,5 +1,6 @@
 import LayoutFooter from "../layouts/Layout.footer";
 import LayoutHeader from "../layouts/Layout.header";
+import Carousels from "../modules/Carousel";
 import CarouselsOne from "../modules/CarouselOne";
 import Investors from "../modules/Investors";
 import ProductPortfolio from "../modules/Product";
@@ -28,7 +29,7 @@ const Categories = () => {
   return (
     <>
       <LayoutHeader title="COMMERCIAL" />
-      <CarouselsOne />
+      <Carousels />
       {/* <ProductPortfolio title="Why Enhance Your Listing Photos?" data={data} /> */}
       <div className={style.parent}>
         <div className={style.child}>
