@@ -1,7 +1,7 @@
 import { DotPosition } from "antd/es/carousel";
 import { createRef, useState } from "react";
 import { Carousel, Col, Row } from "antd";
-import style from "./css/Carousel.module.css";
+import style from "./css/CarouselHiden.module.css";
 import before_1959 from "./../assets/Photoediting/91561.jpg";
 import after_1959 from "./../assets/Photoediting/91592.jpg";
 import after_11245 from "./../assets/DaytoTwilight/11245.jpg";
@@ -15,7 +15,7 @@ import after_product from "./../assets/ClippingPath/S32.jpg";
 import left from "./../assets/left.png";
 import right from "./../assets/right.png";
 
-const Carousels = () => {
+const CarouselHiden = () => {
   const SamplePrevArrow = (props: any) => {
     const { className, style, onClick } = props;
     return (
@@ -59,10 +59,10 @@ const Carousels = () => {
     prevArrow: <SamplePrevArrow />
   };
   return (
-    <div>
+    <div className={style.hidden}>
       <Row justify="center">
         <Col span={24}>
-          <Carousel draggable dots={false} arrows {...settings}>
+          <Carousel dots={false} arrows={true} draggable={true}>
             <div>
               <div className="flex justify-between">
                 <div className="w-[49.85%]">
@@ -193,4 +193,4 @@ const Carousels = () => {
   );
 };
 
-export default Carousels;
+export default CarouselHiden;

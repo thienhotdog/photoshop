@@ -98,7 +98,6 @@ body {
 
 .ant-carousel .slick-dots li {
   height: 10px !important;
-
   background: green !important;
 }
 
@@ -112,4 +111,8 @@ body {
 }
 .ant-carousel .slick-dots li.slick-active {
   background: red !important;
+}
+
+.ant-modal .ant-modal-close {
+  right: 5px;
 }

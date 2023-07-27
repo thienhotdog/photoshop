@@ -10,6 +10,7 @@
   overflow: hidden;
   display: block;
 }
+
 .header_content {
   transform: translateZ(0);
   left: 0;

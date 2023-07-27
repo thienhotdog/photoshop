@@ -9,7 +9,7 @@ import img_11147 from "./../assets/2018-08-11 147.jpg";
 const CarouselsOne = () => {
   return (
     <div className="mt-10">
-      <Carousel autoplay dotPosition={"top"}>
+      <Carousel draggable autoplay dots={false}>
         <div>
           <img src={img_1} alt="" className=" w-[60%] ml-[20%]" />
         </div>

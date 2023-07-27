@@ -1,7 +1,6 @@
 import { Col, Row } from "antd";
 import Investors from "../../modules/Investors";
 import ThisWhatWeDo from "../../modules/ThisWhatWeDo";
-import Carousels from "../../modules/Carousel";
 import LayoutHeader from "../../layouts/Layout.header";
 import LayoutFooter from "../../layouts/Layout.footer";
 import time from "./../../assets/24h.png";
@@ -14,6 +13,8 @@ import { useState } from "react";
 import style from "./../css/PhotoEditting.module.css";
 import Modal from "antd/es/modal/Modal";
 import CarouselsOne from "../../modules/CarouselOne";
+import CarouselHiden from "../../modules/CarouselHiden";
+
 const Photoediting = () => {
   const [show, setShow] = useState<boolean>(false);
   const showMenus = () => {
@@ -31,7 +32,7 @@ const Photoediting = () => {
           width={"80%"}
           onCancel={() => setShow(false)}
         >
-          <Carousels />
+          <CarouselHiden />
         </Modal>
       )}
       <LayoutHeader title="" title2="photoediting" />
