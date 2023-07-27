@@ -18,6 +18,7 @@ import upload from "./../assets/upload.png";
 import edit from "./../assets/edit.jpg";
 import review from "./../assets/review.jpg";
 import dowload from "./../assets/dowload.png";
+
 const Home = () => {
   const onChange = (currentSlide: number) => {
     console.log(currentSlide);
