@@ -41,7 +41,10 @@
   width: 1344px;
   background-color: tomato;
 }
-
+.banner_hero_image {
+  width: 100%;
+  height: auto;
+}
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
