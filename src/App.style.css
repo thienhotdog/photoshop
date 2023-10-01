@@ -117,3 +117,13 @@ body {
 .ant-modal .ant-modal-close {
   right: 5px;
 }
+
+.ant-collapse-header-text {
+  font-weight: 400;
+  font-size: 18px;
+  color: #4f4f4f;
+}
+
+.ant-collapse-item {
+  /* background: none !important; */
+}

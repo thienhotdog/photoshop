@@ -176,33 +176,33 @@ const LayoutHeader = (props: Props) => {
                 </li>
               ) : (
                 <li className={style.nav_item_hover}>
-                  <Link to="/FAQ" onClick={scrollToTop}>
+                  <Link to="/faq" onClick={scrollToTop}>
                     <p>FAQ</p>
                   </Link>
                 </li>
               )}
               {props.title == "AUTOMOTIVE" ? (
                 <li className={style.nav_item}>
-                  <Link to="" onClick={scrollToTop}>
+                  <Link to="/blogs" onClick={scrollToTop}>
                     <p>BLOGS</p>
                   </Link>
                 </li>
               ) : (
                 <li className={style.nav_item_hover}>
-                  <Link to="" onClick={scrollToTop}>
+                  <Link to="/blogs" onClick={scrollToTop}>
                     <p>BLOGS</p>
                   </Link>
                 </li>
               )}
               {props.title == "ABOUTUS" ? (
                 <li className={style.nav_item}>
-                  <Link to="" onClick={scrollToTop}>
+                  <Link to="/about-us" onClick={scrollToTop}>
                     <p>ABOUT US</p>
                   </Link>
                 </li>
               ) : (
                 <li className={style.nav_item_hover}>
-                  <Link to="" onClick={scrollToTop}>
+                  <Link to="/about-us" onClick={scrollToTop}>
                     <p>ABOUT US</p>
                   </Link>
                 </li>
@@ -236,10 +236,10 @@ const LayoutHeader = (props: Props) => {
       </div>
       {/* header2 */}
 
-      <div className={style.header_2}>
-        <div className={style.header_2_nav}>
-          <div className={style.header_2_nav_div}>
-            {(props.title == "" || !props.title) && (
+      {(props.title == "" || !props.title) && (
+        <div className={style.header_2}>
+          <div className={style.header_2_nav}>
+            <div className={style.header_2_nav_div}>
               <ul className={style.list_nav2_item}>
                 {props?.title2 == "photoediting" ? (
                   <li className={style.nav2_item}>
@@ -375,195 +375,153 @@ const LayoutHeader = (props: Props) => {
                   </li>
                 )}
               </ul>
-            )}
-            {props.title == "COMMERCIAL" && (
-              <ul className={style.list_nav2_item}>
-                {props?.title2 == "photoediting" ? (
-                  <li className={style.nav2_item}>
-                    <Link to="/home/photoediting" onClick={scrollToTop}>
-                      <div>
-                        <div className={style.nav2_item_1}>Real Estate</div>
-                        <div className={style.nav2_item_2}>Photo Editing</div>
-                      </div>
-                    </Link>
-                  </li>
-                ) : (
-                  <li className={style.nav2_item_hover}>
-                    <Link to="/home/photoediting" onClick={scrollToTop}>
-                      <div>
-                        <div className={style.nav2_item_1}>Real Estate</div>
-                        <div className={style.nav2_item_2}>Photo Editing</div>
-                      </div>
-                    </Link>
-                  </li>
-                )}
-                {props?.title2 == "daytotwilight" ? (
-                  <li className={style.nav2_item}>
-                    <Link to="/home/day_to_twilight" onClick={scrollToTop}>
-                      <div>
-                        <div className={style.nav2_item_1}>Convert</div>
-                        <div className={style.nav2_item_2}>Day to Twilight</div>
-                      </div>
-                    </Link>
-                  </li>
-                ) : (
-                  <li className={style.nav2_item_hover}>
-                    <Link to="/home/day_to_twilight" onClick={scrollToTop}>
-                      <div>
-                        <div className={style.nav2_item_1}>Convert</div>
-                        <div className={style.nav2_item_2}>Day to Twilight</div>
-                      </div>
-                    </Link>
-                  </li>
-                )}
-                {props?.title2 == "retouching" ? (
-                  <li className={style.nav2_item}>
-                    <Link to="/home/retouching" onClick={scrollToTop}>
-                      <div>
-                        <div className={style.nav2_item_1}>Product</div>
-                        <div className={style.nav2_item_2}>Retouching</div>
-                      </div>
-                    </Link>
-                  </li>
-                ) : (
-                  <li className={style.nav2_item_hover}>
-                    <Link to="/home/retouching" onClick={scrollToTop}>
-                      <div>
-                        <div className={style.nav2_item_1}>Product</div>
-                        <div className={style.nav2_item_2}>Retouching</div>
-                      </div>
-                    </Link>
-                  </li>
-                )}
-                {props?.title2 == "virtual_staging" ? (
-                  <li className={style.nav2_item}>
-                    <Link to="/home/virtual_staging" onClick={scrollToTop}>
-                      <div>
-                        <div className={style.nav2_item_1}>Virtual</div>
-                        <div className={style.nav2_item_2}>Staging</div>
-                      </div>
-                    </Link>
-                  </li>
-                ) : (
-                  <li className={style.nav2_item_hover}>
-                    <Link to="/home/virtual_staging" onClick={scrollToTop}>
-                      <div>
-                        <div className={style.nav2_item_1}>Virtual</div>
-                        <div className={style.nav2_item_2}>Staging</div>
-                      </div>
-                    </Link>
-                  </li>
-                )}
-                {props?.title2 == "clipping_path" ? (
-                  <li className={style.nav2_item}>
-                    <Link to="/home/clipping_path" onClick={scrollToTop}>
-                      <div>
-                        <div className={style.nav2_item_1}>Clipping</div>
-                        <div className={style.nav2_item_2}>Path</div>
-                      </div>
-                    </Link>
-                  </li>
-                ) : (
-                  <li className={style.nav2_item_hover}>
-                    <Link to="/home/clipping_path" onClick={scrollToTop}>
-                      <div>
-                        <div className={style.nav2_item_1}>Clipping</div>
-                        <div className={style.nav2_item_2}>Path</div>
-                      </div>
-                    </Link>
-                  </li>
-                )}
-                {props?.title2 == "720_panarama" ? (
-                  <li className={style.nav2_item}>
-                    <Link to="/home/720_panarama" onClick={scrollToTop}>
-                      <div>
-                        <div className={style.nav2_item_1}>360</div>
-                        <div className={style.nav2_item_2}>Panarama</div>
-                      </div>
-                    </Link>
-                  </li>
-                ) : (
-                  <li className={style.nav2_item_hover}>
-                    <Link to="/home/720_panarama" onClick={scrollToTop}>
-                      <div>
-                        <div className={style.nav2_item_1}>360</div>
-                        <div className={style.nav2_item_2}>Panarama</div>
-                      </div>
-                    </Link>
-                  </li>
-                )}
-                {props?.title2 == "video_editing" ? (
-                  <li className={style.nav2_item}>
-                    <Link to="/home/video_editing" onClick={scrollToTop}>
-                      <div>
-                        <div className={style.nav2_item_1}>Video</div>
-                        <div className={style.nav2_item_2}>editing</div>
-                      </div>
-                    </Link>
-                  </li>
-                ) : (
-                  <li className={style.nav2_item_hover}>
-                    <Link to="/home/video_editing" onClick={scrollToTop}>
-                      <div>
-                        <div className={style.nav2_item_1}>Video</div>
-                        <div className={style.nav2_item_2}>editing</div>
-                      </div>
-                    </Link>
-                  </li>
-                )}
-              </ul>
-            )}
-            {props.title == "RENDERS" && (
-              <ul className={style.list_nav2_item}>
-                <li className={style.nav2_item_hover}>
-                  <Link to="/servives" onClick={scrollToTop}>
-                    <p className="mt-2">EXTERIOR RENDERS</p>
-                  </Link>
-                </li>
-                <li className={style.nav2_item_hover}>
-                  <Link to="/servives" onClick={scrollToTop}>
-                    <p className="mt-2">INTERIOR RENDERS</p>
-                  </Link>
-                </li>
-                <li className={style.nav2_item_hover}>
-                  <Link to="/servives" onClick={scrollToTop}>
-                    <p className="mt-2">360° RENDERS </p>
-                  </Link>
-                </li>
-                <li className={style.nav2_item_hover}>
-                  <Link to="/servives" onClick={scrollToTop}>
-                    <p className="mt-2">360° VIRTUAL TOURS</p>
-                  </Link>
-                </li>
-              </ul>
-            )}
-            {props.title == "FAQ" && (
-              <ul className={style.list_nav2_item}>
-                <li className={style.nav2_item_hover}>
-                  <Link to="/servives" onClick={scrollToTop}>
-                    <p className="mt-2">EXTERIOR RENDERS</p>
-                  </Link>
-                </li>
-                <li className={style.nav2_item_hover}>
-                  <Link to="/servives" onClick={scrollToTop}>
-                    <p className="mt-2">INTERIOR RENDERS</p>
-                  </Link>
-                </li>
-                <li className={style.nav2_item_hover}>
-                  <Link to="/servives" onClick={scrollToTop}>
-                    <p className="mt-2">360° RENDERS </p>
-                  </Link>
-                </li>
-                <li className={style.nav2_item_hover}>
-                  <Link to="/servives" onClick={scrollToTop}>
-                    <p className="mt-2">360° VIRTUAL TOURS</p>
-                  </Link>
-                </li>
-              </ul>
-            )}
+            </div>
           </div>
         </div>
-      </div>
+      )}
+      {props.title == "COMMERCIAL" && (
+        <div className={style.header_2}>
+          <div className={style.header_2_nav}>
+            <div className={style.header_2_nav_div}>
+              <ul className={style.list_nav2_item}>
+                {props?.title2 == "photoediting" ? (
+                  <li className={style.nav2_item}>
+                    <Link to="/home/photoediting" onClick={scrollToTop}>
+                      <div>
+                        <div className={style.nav2_item_1}>Real Estate</div>
+                        <div className={style.nav2_item_2}>Photo Editing</div>
+                      </div>
+                    </Link>
+                  </li>
+                ) : (
+                  <li className={style.nav2_item_hover}>
+                    <Link to="/home/photoediting" onClick={scrollToTop}>
+                      <div>
+                        <div className={style.nav2_item_1}>Real Estate</div>
+                        <div className={style.nav2_item_2}>Photo Editing</div>
+                      </div>
+                    </Link>
+                  </li>
+                )}
+                {props?.title2 == "daytotwilight" ? (
+                  <li className={style.nav2_item}>
+                    <Link to="/home/day_to_twilight" onClick={scrollToTop}>
+                      <div>
+                        <div className={style.nav2_item_1}>Convert</div>
+                        <div className={style.nav2_item_2}>Day to Twilight</div>
+                      </div>
+                    </Link>
+                  </li>
+                ) : (
+                  <li className={style.nav2_item_hover}>
+                    <Link to="/home/day_to_twilight" onClick={scrollToTop}>
+                      <div>
+                        <div className={style.nav2_item_1}>Convert</div>
+                        <div className={style.nav2_item_2}>Day to Twilight</div>
+                      </div>
+                    </Link>
+                  </li>
+                )}
+                {props?.title2 == "retouching" ? (
+                  <li className={style.nav2_item}>
+                    <Link to="/home/retouching" onClick={scrollToTop}>
+                      <div>
+                        <div className={style.nav2_item_1}>Product</div>
+                        <div className={style.nav2_item_2}>Retouching</div>
+                      </div>
+                    </Link>
+                  </li>
+                ) : (
+                  <li className={style.nav2_item_hover}>
+                    <Link to="/home/retouching" onClick={scrollToTop}>
+                      <div>
+                        <div className={style.nav2_item_1}>Product</div>
+                        <div className={style.nav2_item_2}>Retouching</div>
+                      </div>
+                    </Link>
+                  </li>
+                )}
+                {props?.title2 == "virtual_staging" ? (
+                  <li className={style.nav2_item}>
+                    <Link to="/home/virtual_staging" onClick={scrollToTop}>
+                      <div>
+                        <div className={style.nav2_item_1}>Virtual</div>
+                        <div className={style.nav2_item_2}>Staging</div>
+                      </div>
+                    </Link>
+                  </li>
+                ) : (
+                  <li className={style.nav2_item_hover}>
+                    <Link to="/home/virtual_staging" onClick={scrollToTop}>
+                      <div>
+                        <div className={style.nav2_item_1}>Virtual</div>
+                        <div className={style.nav2_item_2}>Staging</div>
+                      </div>
+                    </Link>
+                  </li>
+                )}
+                {props?.title2 == "clipping_path" ? (
+                  <li className={style.nav2_item}>
+                    <Link to="/home/clipping_path" onClick={scrollToTop}>
+                      <div>
+                        <div className={style.nav2_item_1}>Clipping</div>
+                        <div className={style.nav2_item_2}>Path</div>
+                      </div>
+                    </Link>
+                  </li>
+                ) : (
+                  <li className={style.nav2_item_hover}>
+                    <Link to="/home/clipping_path" onClick={scrollToTop}>
+                      <div>
+                        <div className={style.nav2_item_1}>Clipping</div>
+                        <div className={style.nav2_item_2}>Path</div>
+                      </div>
+                    </Link>
+                  </li>
+                )}
+                {props?.title2 == "720_panarama" ? (
+                  <li className={style.nav2_item}>
+                    <Link to="/home/720_panarama" onClick={scrollToTop}>
+                      <div>
+                        <div className={style.nav2_item_1}>360</div>
+                        <div className={style.nav2_item_2}>Panarama</div>
+                      </div>
+                    </Link>
+                  </li>
+                ) : (
+                  <li className={style.nav2_item_hover}>
+                    <Link to="/home/720_panarama" onClick={scrollToTop}>
+                      <div>
+                        <div className={style.nav2_item_1}>360</div>
+                        <div className={style.nav2_item_2}>Panarama</div>
+                      </div>
+                    </Link>
+                  </li>
+                )}
+                {props?.title2 == "video_editing" ? (
+                  <li className={style.nav2_item}>
+                    <Link to="/home/video_editing" onClick={scrollToTop}>
+                      <div>
+                        <div className={style.nav2_item_1}>Video</div>
+                        <div className={style.nav2_item_2}>editing</div>
+                      </div>
+                    </Link>
+                  </li>
+                ) : (
+                  <li className={style.nav2_item_hover}>
+                    <Link to="/home/video_editing" onClick={scrollToTop}>
+                      <div>
+                        <div className={style.nav2_item_1}>Video</div>
+                        <div className={style.nav2_item_2}>editing</div>
+                      </div>
+                    </Link>
+                  </li>
+                )}
+              </ul>
+            </div>
+          </div>
+        </div>
+      )}
     </header>
   );
 };

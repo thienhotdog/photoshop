@@ -17,6 +17,8 @@ import ItemRemoval from "./pages/servives/ItemRemoval";
 import FloorPlans from "./pages/servives/FloorPlans";
 import RendersCommercial from "./pages/servives/RendersCommercial";
 import Faq from "./pages/Faq";
+import Blog from "./pages/Blog";
+import AboutUs from "./pages/AboutUs";
 
 const App = () => {
   return (
@@ -26,7 +28,9 @@ const App = () => {
           <Route path="" element={<Home />} />
           <Route path="/servives" element={<Categories />} />
           <Route path="/renders" element={<Renders />} />
-          <Route path="/FAQ" element={<Faq />} />
+          <Route path="/faq" element={<Faq />} />
+          <Route path="/blogs" element={<Blog />} />
+          <Route path="/about-us" element={<AboutUs />} />
           {/* RESIDENTIAL REAL ESTATE */}
           <Route path="/home/photoediting" element={<Photoediting />} />
           <Route path="/home/day_to_twilight" element={<DaytoTwilight />} />

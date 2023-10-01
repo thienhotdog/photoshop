@@ -3,13 +3,10 @@ import before_9045 from "./../assets/Photoediting/9045.jpg";
 import after_9045 from "./../assets/Photoediting/9046.jpg";
 import before_19141 from "./../assets/DaytoTwilight/19141.jpg";
 import after_19141 from "./../assets/DaytoTwilight/19143.jpg";
-
 import before_26443 from "./../assets/Retouching/2 day-26443.jpg";
 import after_26443 from "./../assets/Retouching/2 day-264.jpg";
-
 import before_vr03 from "./../assets/VirtualStaging/Virtual Staging/Virtual Staging 03.jpg";
 import after_vr03 from "./../assets/VirtualStaging/Virtual Staging/Virtual Staging 04.jpg";
-
 import after_20230207 from "./../assets/ClippingPath/20230207-DYConsultants-Entela-001.jpg";
 import before_20230207 from "./../assets/ClippingPath/20230207-DYConsultants-Entela-001_1.jpg";
 import before_20230207_joanna from "./../assets/ClippingPath/20230207-DYConsultants-Joanna-002.jpg";
@@ -77,7 +74,7 @@ const ThisWhatWeDo = (props: Props) => {
       )}
       <div className="mx-[6%] mt-10 mb-[160px]">
         <Row gutter={32}>
-          <Col md={{ span: 24 }} lg={{ span: 12 }} className="py-5   ">
+          <Col md={{ span: 24 }} lg={{ span: 12 }} className="py-5">
             {!props?.showMenus ? (
               <>
                 <Link to="/home/photoediting" onClick={() => scrollToTop()}>

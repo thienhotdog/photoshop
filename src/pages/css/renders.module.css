@@ -37,26 +37,71 @@
 .banner_hero_desc > p {
   line-height: 25px;
 }
+
+.banner_hero_imagess {
+  width: 80%;
+  height: auto;
+}
+.banner_hero_btn {
+  width: 244px;
+  height: 70px;
+  background: #8ac640;
+  border-radius: 20px;
+  padding: 0;
+  line-height: 70px;
+  border: none;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner_hero_btn:hover {
+  background-color: #0d6efd;
+}
+
+.banner_hero_inners {
+  position: absolute;
+  width: 80%;
+}
+.contact_cta_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  padding: 0 87px 0 92px;
+}
+.contact_cta_slogan {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #fff;
+}
+.btn {
+  width: 250px;
+  height: 80px;
+  border-radius: 20px;
+  background: #fff;
+  padding: 0;
+  line-height: 80px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #4f4f4f;
+  border: none;
+  text-align: center;
+}
+.btn:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
 .container {
   width: 1344px;
-  background-color: tomato;
 }
 .banner_hero_image {
   width: 100%;
   height: auto;
-}
-.row {
-  --bs-gutter-x: 1.5rem;
-  --bs-gutter-y: 0;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: calc(-1 * var(--bs-gutter-y));
-  margin-right: calc(-0.5 * var(--bs-gutter-x));
-  margin-left: calc(-0.5 * var(--bs-gutter-x));
-}
-.col {
-  margin-left: auto;
-  margin-right: auto;
-  flex: 0 0 auto;
-  width: 83.33%;
 }
