@@ -18,7 +18,7 @@ import upload from "./../assets/upload.png";
 import edit from "./../assets/edit.jpg";
 import review from "./../assets/review.jpg";
 import dowload from "./../assets/dowload.png";
-
+import vp from "./../assets/vp.jpg";
 const Home = () => {
   const onChange = (currentSlide: number) => {
     console.log(currentSlide);
@@ -27,8 +27,59 @@ const Home = () => {
   return (
     <>
       <LayoutHeader title="" />
-      {/* banner */}
-      <Carousels />
+
+      <div
+        className={`${Style.media} 2xl:mx-[5%] xl:mx-[5%] xl:mx-[1.5%] mb-[80px] bg-[#f6f6f6] mt-10`}
+      >
+        <Row justify="space-between">
+          <Col lg={{ span: 24 }} xl={{ span: 12 }}>
+            <div className="mt-10 text-start mx-[10%] flex justify-center	">
+              <div>
+                <h2 className="text-[40px] font-normal text-[#008000]">
+                  Welcome to
+                </h2>
+
+                <h1 className="mb-[24px]  mb-[22px] text-[40px] font-bold ">
+                  Visuals.<span className="text-[#008000]">RealEstate</span>
+                </h1>
+                <p className=" mb-1 text-[#4f4f4f] text-[18px] font-normal">
+                  With a team of staff based in Nam Dinh, Vietnam,
+                </p>
+                <p className=" mb-1 text-[#4f4f4f] text-[18px] font-normal">
+                  our team specializes in photo editing, virtual
+                </p>
+                <p className=" mb-1 text-[#4f4f4f] text-[18px] font-normal">
+                  staging, video editing, floor plans, product
+                </p>
+                <p className=" mb-1 text-[#4f4f4f] text-[18px] font-normal">
+                  photo retouching.
+                </p>
+                <p className=" mb-1 text-[#4f4f4f] text-[18px] font-normal">
+                  We are proud of our best services
+                </p>
+                <p className=" mb-1 text-[#4f4f4f] text-[18px] font-normal">
+                  with experienced real estate photo editing
+                </p>
+                <p className=" mb-1 text-[#4f4f4f] text-[18px] font-normal">
+                  experts. We greatly appreciate our partners and
+                </p>
+                <p className="text-[#4f4f4f] text-[18px] font-normal">
+                  ready to serve and satisfy all client’s taste.
+                </p>
+              </div>
+            </div>
+          </Col>
+          <Col xl={{ span: 12 }} lg={0}>
+            <div className="mt-10 mr-[10%]  overflow-hidden mb-10">
+              <img
+                src={about}
+                alt=""
+                className="transition duration-1000  hover:scale-110 "
+              />
+            </div>
+          </Col>
+        </Row>
+      </div>
       {/* Professional Photo Editing, Virtual Staging, Floor Plan Redraws, &Renders at Unbeatable Prices */}
       <div className="my-10 mx-[9%] ">
         <div className="text-center text-[28px]  ">
@@ -304,10 +355,10 @@ const Home = () => {
       >
         <Row justify="space-between">
           <Col lg={{ span: 24 }} xl={{ span: 12 }}>
-            <div className="mt-10 text-start mx-[10%]">
-              <h2 className="mb-[24px]  mb-[22px] text-[40px] font-bold">
+            <div className="mt-10 text-start mx-[10%] ">
+              <h3 className="mb-[24px]  mb-[22px] text-[40px] font-bold">
                 ABOUT US
-              </h2>
+              </h3>
               <p className="mb-[24px] mb-[22px] text-[#4f4f4f] text-[18px] font-normal	 ">
                 BoxBrownie.com is the leading online hub for all things digital.
                 Our global team of professional editing experts are ready to
@@ -333,7 +384,7 @@ const Home = () => {
           <Col xl={{ span: 12 }} lg={0}>
             <div className="mt-10  overflow-hidden">
               <img
-                src={about}
+                src={vp}
                 alt=""
                 className="transition duration-1000  hover:scale-110 "
               />

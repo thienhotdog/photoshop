@@ -168,15 +168,15 @@ const LayoutHeader = (props: Props) => {
                 </li>
               )}
 
-              {props.title == "ONLINE" ? (
+              {props.title == "FAQ" ? (
                 <li className={style.nav_item}>
-                  <Link to="/" onClick={scrollToTop}>
+                  <Link to="/FAQ" onClick={scrollToTop}>
                     <p>FAQ</p>
                   </Link>
                 </li>
               ) : (
                 <li className={style.nav_item_hover}>
-                  <Link to="/" onClick={scrollToTop}>
+                  <Link to="/FAQ" onClick={scrollToTop}>
                     <p>FAQ</p>
                   </Link>
                 </li>
@@ -514,6 +514,30 @@ const LayoutHeader = (props: Props) => {
               </ul>
             )}
             {props.title == "RENDERS" && (
+              <ul className={style.list_nav2_item}>
+                <li className={style.nav2_item_hover}>
+                  <Link to="/servives" onClick={scrollToTop}>
+                    <p className="mt-2">EXTERIOR RENDERS</p>
+                  </Link>
+                </li>
+                <li className={style.nav2_item_hover}>
+                  <Link to="/servives" onClick={scrollToTop}>
+                    <p className="mt-2">INTERIOR RENDERS</p>
+                  </Link>
+                </li>
+                <li className={style.nav2_item_hover}>
+                  <Link to="/servives" onClick={scrollToTop}>
+                    <p className="mt-2">360° RENDERS </p>
+                  </Link>
+                </li>
+                <li className={style.nav2_item_hover}>
+                  <Link to="/servives" onClick={scrollToTop}>
+                    <p className="mt-2">360° VIRTUAL TOURS</p>
+                  </Link>
+                </li>
+              </ul>
+            )}
+            {props.title == "FAQ" && (
               <ul className={style.list_nav2_item}>
                 <li className={style.nav2_item_hover}>
                   <Link to="/servives" onClick={scrollToTop}>

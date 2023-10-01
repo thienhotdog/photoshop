@@ -42,9 +42,10 @@ const Categories = () => {
           </p>
         </div>
       </div>
-      <ProductByCategory />
-      <div className="pt-10">
-        <Investors />
+      <div className="flex justify-center py-3 mt-12 ">
+        <div className="h-[5px] w-[20px] bg-green-500" />
+        <div className="h-[5px] w-[20px] bg-green-500 ml-2 mr-2" />
+        <div className="h-[5px] w-[20px] bg-green-500" />
       </div>
       <ThisWhatWeDo />
       <LayoutFooter />
