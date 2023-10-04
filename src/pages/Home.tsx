@@ -19,7 +19,6 @@ import edit from "./../assets/edit.jpg";
 import review from "./../assets/review.jpg";
 import dowload from "./../assets/dowload.png";
 import vp from "./../assets/vp.jpg";
-import album from "./../assets/album.mp4";
 const Home = () => {
   const onChange = (currentSlide: number) => {
     console.log(currentSlide);
@@ -27,8 +26,7 @@ const Home = () => {
 
   return (
     <>
-      {/* <LayoutHeader title="" /> */}
-      <div>
+      {/* <div>
         <header
           className="relative flex items-center 
             justify-center h-[500px] w-full mb-12 
@@ -52,8 +50,10 @@ const Home = () => {
             <source src={album} type="video/mp4" />
           </video>
         </header>
-      </div>
-      {/* <div
+      </div> */}
+      <LayoutHeader title="" />
+
+      <div
         className={`${Style.media} 2xl:mx-[5%] xl:mx-[5%] xl:mx-[1.5%] mb-[80px] bg-[#f6f6f6] mt-10`}
       >
         <Row justify="space-between">
@@ -104,9 +104,9 @@ const Home = () => {
             </div>
           </Col>
         </Row>
-      </div> */}
+      </div>
       {/* Professional Photo Editing, Virtual Staging, Floor Plan Redraws, &Renders at Unbeatable Prices */}
-      {/* <div className="my-10 mx-[9%] ">
+      <div className="my-10 mx-[9%] ">
         <div className="text-center text-[28px]  ">
           <h1 className="text-[40px] font-bold">Why Choose Us?</h1>
           <div className="flex justify-center py-3">
@@ -265,14 +265,14 @@ const Home = () => {
             </Col>
           </Row>
         </div>
-      </div> */}
+      </div>
 
       {/* GET STARTED IN UNDER 60 SECONDS */}
-      {/* <div>
+      <div>
         <ThisWhatWeDo />
-      </div> */}
+      </div>
       {/* 4 bước */}
-      {/* <div className="bg-[#f6f6f6] py-[80px] ">
+      <div className="bg-[#f6f6f6] py-[80px] ">
         <div className="mx-[6%] ">
           <Row justify="space-between">
             <Col
@@ -372,10 +372,10 @@ const Home = () => {
             </Col>
           </Row>
         </div>
-      </div> */}
+      </div>
       {/* ABOUT US */}
 
-      {/* <div
+      <div
         className={`${Style.media} 2xl:mx-[9%] xl:mx-[5%] xl:mx-[1.5%] mb-[80px]`}
       >
         <Row justify="space-between">
@@ -417,7 +417,7 @@ const Home = () => {
           </Col>
         </Row>
       </div>
-      <LayoutFooter /> */}
+      <LayoutFooter />
     </>
   );
 };
