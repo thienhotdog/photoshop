@@ -57,7 +57,7 @@ const ThisWhatWeDo = (props: Props) => {
           <Col
             md={{ span: 24 }}
             lg={{ span: 12 }}
-            className="max-w-[1344px] py-5"
+            className="max-w-[1344px] py-3"
           >
             {!props?.showMenus ? (
               <>
@@ -143,7 +143,7 @@ const ThisWhatWeDo = (props: Props) => {
           <Col
             md={{ span: 24 }}
             lg={{ span: 12 }}
-            className="cursor-pointer py-5  "
+            className="cursor-pointer py-3  "
           >
             {!props?.showMenus ? (
               <>
@@ -229,7 +229,7 @@ const ThisWhatWeDo = (props: Props) => {
           <Col
             md={{ span: 24 }}
             lg={{ span: 12 }}
-            className=" cursor-pointer py-5 "
+            className=" cursor-pointer py-3 "
           >
             {!props?.showMenus ? (
               <>
@@ -315,7 +315,7 @@ const ThisWhatWeDo = (props: Props) => {
           <Col
             md={{ span: 24 }}
             lg={{ span: 12 }}
-            className="cursor-pointer py-5 "
+            className="cursor-pointer py-3 "
           >
             {!props?.showMenus ? (
               <>
@@ -400,7 +400,7 @@ const ThisWhatWeDo = (props: Props) => {
           <Col
             md={{ span: 24 }}
             lg={{ span: 12 }}
-            className="cursor-pointer py-5 "
+            className="cursor-pointer py-3 "
           >
             {!props?.showMenus ? (
               <>
@@ -486,7 +486,7 @@ const ThisWhatWeDo = (props: Props) => {
           <Col
             md={{ span: 24 }}
             lg={{ span: 12 }}
-            className="cursor-pointer py-5 "
+            className="cursor-pointer py-3 "
           >
             {!props?.showMenus ? (
               <>
