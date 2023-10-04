@@ -63,7 +63,7 @@ const Blog = () => {
       <div>
         <div className="pb-10 flex justify-center">
           <div className="max-w-[1344px] pl-[50px] pr-[50px]">
-            <div className="grid grid-cols-3 gap-5  ">
+            <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5  ">
               <div className="bg-[#f7f7f7] rounded-[20px] overflow-hidden	">
                 <div className="transition duration-1000  hover:scale-110 cursor-pointer">
                   <img

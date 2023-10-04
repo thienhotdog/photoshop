@@ -42,7 +42,7 @@ const Categories = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-center py-3 mt-12 ">
+      <div className={style.div}>
         <div className="h-[5px] w-[20px] bg-green-500" />
         <div className="h-[5px] w-[20px] bg-green-500 ml-2 mr-2" />
         <div className="h-[5px] w-[20px] bg-green-500" />

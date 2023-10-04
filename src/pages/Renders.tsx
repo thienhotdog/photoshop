@@ -88,7 +88,7 @@ const Renders = () => {
               xs={{ span: 24 }}
               sm={{ span: 12 }}
               md={{ span: 8 }}
-              lg={{ span: 3 }}
+              xl={{ span: 3 }}
               className="pb-5"
             >
               <div>
@@ -112,7 +112,7 @@ const Renders = () => {
               xs={{ span: 24 }}
               sm={{ span: 12 }}
               md={{ span: 8 }}
-              lg={{ span: 3 }}
+              xl={{ span: 3 }}
               className="pb-5"
             >
               <div>
@@ -136,7 +136,7 @@ const Renders = () => {
               xs={{ span: 24 }}
               sm={{ span: 12 }}
               md={{ span: 8 }}
-              lg={{ span: 3 }}
+              xl={{ span: 3 }}
               className="pb-5"
             >
               <div>
@@ -160,7 +160,7 @@ const Renders = () => {
               xs={{ span: 24 }}
               sm={{ span: 12 }}
               md={{ span: 8 }}
-              lg={{ span: 3 }}
+              xl={{ span: 3 }}
               className="pb-5"
             >
               <div>
@@ -184,7 +184,7 @@ const Renders = () => {
               xs={{ span: 24 }}
               sm={{ span: 12 }}
               md={{ span: 8 }}
-              lg={{ span: 3 }}
+              xl={{ span: 3 }}
               className="pb-5"
             >
               <div>
@@ -208,7 +208,7 @@ const Renders = () => {
               xs={{ span: 24 }}
               sm={{ span: 12 }}
               md={{ span: 8 }}
-              lg={{ span: 3 }}
+              xl={{ span: 3 }}
               className="pb-5"
             >
               <div>
@@ -231,6 +231,7 @@ const Renders = () => {
           </Row>
         </div>
       </div>
+
       <div className="bg-[#f6f6f6] py-[80px] ">
         <div className="mx-[6%] ">
           <Row justify="space-between">

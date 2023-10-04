@@ -197,7 +197,7 @@ const Faq = () => {
               <p>Please take a look on FAQ if it could help you</p>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-10">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
             <div>
               <h1 className={Style.list_question_col_title}>Photo Services</h1>
               <Collapse
@@ -225,7 +225,7 @@ const Faq = () => {
               />
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-10 mt-10">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-10 mt-10">
             <div>
               <h1 className={Style.list_question_col_title}>
                 Pricing & Payment

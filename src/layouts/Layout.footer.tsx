@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import style from "./LayoutFooter.module.css";
 const LayoutFooter = () => {
   return (
-    <footer>
+    <footer className="mt-[20px]">
       {/* <div className="bg-black py-10">
         <div className="flex justify-center	">
           <img
@@ -134,6 +134,7 @@ const LayoutFooter = () => {
         <div className={style.row}>
           <div className={style.col_1}>
             <div className={style.footer_col}>
+              <h3 className={style.footer_info_title}>Our main Office</h3>
               <div className={style.footer_info_item}>
                 <div className={style.footer_info_icon}>
                   <img
@@ -142,7 +143,6 @@ const LayoutFooter = () => {
                   />
                 </div>
                 <div>
-                  <h3 className={style.footer_info_title}>Our main Office</h3>
                   <div className={style.footer_info_desc}>
                     <p>
                       8th Floor, Song Da 9 Buiding, No.2 Nguyen Hoang Str, My

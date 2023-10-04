@@ -39,12 +39,12 @@ const LayoutHeader = (props: Props) => {
                 <h3 className={style.h3_menu}>Menu</h3>
 
                 <ul>
-                  <li className={style.menu_item}>
-                    <Link to="">Home</Link>
+                  <li className={style.menu_item} onClick={scrollToTop}>
+                    <Link to="/">Home</Link>
                   </li>
                   <li className={style.menu_items}>
                     <div className={style.div_menu}>
-                      <span className={style.span}>
+                      <span className={style.span} onClick={scrollToTop}>
                         <Link to="/servives">Services</Link>
                       </span>
                       <div className={style.div_icon}>
@@ -56,19 +56,19 @@ const LayoutHeader = (props: Props) => {
                       </div>
                     </div>
                   </li>
-                  <li className={style.menu_item}>
+                  <li className={style.menu_item} onClick={scrollToTop}>
                     <Link to="/renders">How it works</Link>
                   </li>
-                  <li className={style.menu_item}>
+                  <li className={style.menu_item} onClick={scrollToTop}>
                     <Link to="/faq">Faq</Link>
                   </li>
-                  <li className={style.menu_item}>
+                  <li className={style.menu_item} onClick={scrollToTop}>
                     <Link to="/blogs">Blogs</Link>
                   </li>
-                  <li className={style.menu_item}>
+                  <li className={style.menu_item} onClick={scrollToTop}>
                     <Link to="/about-us">About us</Link>
                   </li>
-                  <li className={style.menu_item}>
+                  <li className={style.menu_item} onClick={scrollToTop}>
                     <Link to="">Contact us</Link>
                   </li>
                 </ul>

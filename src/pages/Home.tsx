@@ -56,8 +56,8 @@ const Home = () => {
       <div
         className={`${Style.media} 2xl:mx-[5%] xl:mx-[5%] xl:mx-[1.5%] mb-[80px] bg-[#f6f6f6] mt-10`}
       >
-        <Row justify="space-between">
-          <Col lg={{ span: 24 }} xl={{ span: 12 }}>
+        <Row>
+          <Col lg={{ span: 12 }} sm={{ span: 24 }} xs={{ span: 24 }}>
             <div className="mt-10 text-start mx-[10%] flex justify-center	">
               <div>
                 <h2 className="text-[40px] font-normal text-[#008000]">
@@ -94,8 +94,13 @@ const Home = () => {
               </div>
             </div>
           </Col>
-          <Col xl={{ span: 12 }} lg={0}>
-            <div className="mt-10 mr-[10%]  overflow-hidden mb-10">
+          <Col
+            lg={{ span: 12 }}
+            sm={{ span: 24 }}
+            xs={{ span: 24 }}
+            className="pl-5 pr-5"
+          >
+            <div className="mt-10 items-center overflow-hidden mb-10">
               <img
                 src={about}
                 alt=""
@@ -123,7 +128,7 @@ const Home = () => {
               xs={{ span: 24 }}
               sm={{ span: 12 }}
               md={{ span: 8 }}
-              lg={{ span: 3 }}
+              xl={{ span: 3 }}
               className="pb-5"
             >
               <div>
@@ -147,7 +152,7 @@ const Home = () => {
               xs={{ span: 24 }}
               sm={{ span: 12 }}
               md={{ span: 8 }}
-              lg={{ span: 3 }}
+              xl={{ span: 3 }}
               className="pb-5"
             >
               <div>
@@ -171,7 +176,7 @@ const Home = () => {
               xs={{ span: 24 }}
               sm={{ span: 12 }}
               md={{ span: 8 }}
-              lg={{ span: 3 }}
+              xl={{ span: 3 }}
               className="pb-5"
             >
               <div>
@@ -195,7 +200,7 @@ const Home = () => {
               xs={{ span: 24 }}
               sm={{ span: 12 }}
               md={{ span: 8 }}
-              lg={{ span: 3 }}
+              xl={{ span: 3 }}
               className="pb-5"
             >
               <div>
@@ -219,7 +224,7 @@ const Home = () => {
               xs={{ span: 24 }}
               sm={{ span: 12 }}
               md={{ span: 8 }}
-              lg={{ span: 3 }}
+              xl={{ span: 3 }}
               className="pb-5"
             >
               <div>
@@ -243,7 +248,7 @@ const Home = () => {
               xs={{ span: 24 }}
               sm={{ span: 12 }}
               md={{ span: 8 }}
-              lg={{ span: 3 }}
+              xl={{ span: 3 }}
               className="pb-5"
             >
               <div>
@@ -378,8 +383,8 @@ const Home = () => {
       <div
         className={`${Style.media} 2xl:mx-[9%] xl:mx-[5%] xl:mx-[1.5%] mb-[80px]`}
       >
-        <Row justify="space-between">
-          <Col lg={{ span: 24 }} xl={{ span: 12 }}>
+        <Row>
+          <Col lg={{ span: 12 }} sm={{ span: 24 }} xs={{ span: 24 }}>
             <div className="mt-10 text-start mx-[10%] ">
               <h3 className="mb-[24px]  mb-[22px] text-[40px] font-bold">
                 ABOUT US
@@ -406,8 +411,13 @@ const Home = () => {
               </p>
             </div>
           </Col>
-          <Col xl={{ span: 12 }} lg={0}>
-            <div className="mt-10  overflow-hidden">
+          <Col
+            lg={{ span: 12 }}
+            sm={{ span: 24 }}
+            xs={{ span: 24 }}
+            className="pl-5 pr-5"
+          >
+            <div className="mt-10 items-center flex justify-center overflow-hidden mb-10 ">
               <img
                 src={vp}
                 alt=""
