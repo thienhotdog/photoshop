@@ -82,30 +82,30 @@ const LayoutHeader = (props: Props) => {
                     className={style.img_icon}
                     onClick={show}
                   />
-                  <div className={style.flex}>
+                  <div className={style.flex} onClick={scrollToTop}>
                     <Link to="/servives">Services</Link>
                   </div>
                 </div>
                 <ul>
-                  <li className={style.menu_item}>
+                  <li className={style.menu_item} onClick={scrollToTop}>
                     <Link to="/home/photoediting">Photo Editing</Link>
                   </li>
-                  <li className={style.menu_item}>
+                  <li className={style.menu_item} onClick={scrollToTop}>
                     <Link to="/home/retouching">Retouching</Link>
                   </li>
-                  <li className={style.menu_item}>
+                  <li className={style.menu_item} onClick={scrollToTop}>
                     <Link to="/home/video_editing">Video Editing</Link>
                   </li>
-                  <li className={style.menu_item}>
+                  <li className={style.menu_item} onClick={scrollToTop}>
                     <Link to="/home/virtual_staging">Staging</Link>
                   </li>
-                  <li className={style.menu_item}>
+                  <li className={style.menu_item} onClick={scrollToTop}>
                     <Link to="/home/day_to_twilight">Day to twilight</Link>
                   </li>
-                  <li className={style.menu_item}>
+                  <li className={style.menu_item} onClick={scrollToTop}>
                     <Link to="home/720_panarama">360 Panarama</Link>
                   </li>
-                  <li className={style.menu_item}>
+                  <li className={style.menu_item} onClick={scrollToTop}>
                     <Link to="/home/video_editing">Video Editing</Link>
                   </li>
                 </ul>
