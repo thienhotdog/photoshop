@@ -57,16 +57,16 @@ const LayoutHeader = (props: Props) => {
                     </div>
                   </li>
                   <li className={style.menu_item}>
-                    <Link to="">How it works</Link>
+                    <Link to="/renders">How it works</Link>
                   </li>
                   <li className={style.menu_item}>
-                    <Link to="">Faq</Link>
+                    <Link to="/faq">Faq</Link>
                   </li>
                   <li className={style.menu_item}>
-                    <Link to="">Blogs</Link>
+                    <Link to="/blogs">Blogs</Link>
                   </li>
                   <li className={style.menu_item}>
-                    <Link to="">About us</Link>
+                    <Link to="/about-us">About us</Link>
                   </li>
                   <li className={style.menu_item}>
                     <Link to="">Contact us</Link>
