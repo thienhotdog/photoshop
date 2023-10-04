@@ -54,7 +54,11 @@ const ThisWhatWeDo = (props: Props) => {
       {!props?.title && <h3 className={style.h3}>This What We Do</h3>}
       <div className={style.container}>
         <Row gutter={32}>
-          <Col md={{ span: 24 }} lg={{ span: 12 }} className="max-w-[1344px]">
+          <Col
+            md={{ span: 24 }}
+            lg={{ span: 12 }}
+            className="max-w-[1344px] py-5"
+          >
             {!props?.showMenus ? (
               <>
                 <Link to="/home/photoediting" onClick={() => scrollToTop()}>
@@ -136,7 +140,11 @@ const ThisWhatWeDo = (props: Props) => {
               </div>
             )}
           </Col>
-          <Col md={{ span: 24 }} lg={{ span: 12 }} className="cursor-pointer  ">
+          <Col
+            md={{ span: 24 }}
+            lg={{ span: 12 }}
+            className="cursor-pointer py-5  "
+          >
             {!props?.showMenus ? (
               <>
                 <Link to="/home/day_to_twilight" onClick={() => scrollToTop()}>
@@ -221,7 +229,7 @@ const ThisWhatWeDo = (props: Props) => {
           <Col
             md={{ span: 24 }}
             lg={{ span: 12 }}
-            className=" cursor-pointer  "
+            className=" cursor-pointer py-5 "
           >
             {!props?.showMenus ? (
               <>
@@ -304,7 +312,11 @@ const ThisWhatWeDo = (props: Props) => {
               </div>
             )}
           </Col>
-          <Col md={{ span: 24 }} lg={{ span: 12 }} className="cursor-pointer  ">
+          <Col
+            md={{ span: 24 }}
+            lg={{ span: 12 }}
+            className="cursor-pointer py-5 "
+          >
             {!props?.showMenus ? (
               <>
                 <Link to="/home/virtual_staging" onClick={() => scrollToTop()}>
@@ -385,7 +397,11 @@ const ThisWhatWeDo = (props: Props) => {
               </div>
             )}
           </Col>
-          <Col md={{ span: 24 }} lg={{ span: 12 }} className="cursor-pointer  ">
+          <Col
+            md={{ span: 24 }}
+            lg={{ span: 12 }}
+            className="cursor-pointer py-5 "
+          >
             {!props?.showMenus ? (
               <>
                 <Link to="/home/clipping_path" onClick={() => scrollToTop()}>
@@ -467,7 +483,11 @@ const ThisWhatWeDo = (props: Props) => {
               </div>
             )}
           </Col>
-          <Col md={{ span: 24 }} lg={{ span: 12 }} className="cursor-pointer  ">
+          <Col
+            md={{ span: 24 }}
+            lg={{ span: 12 }}
+            className="cursor-pointer py-5 "
+          >
             {!props?.showMenus ? (
               <>
                 <Link to="/home/720_panarama" onClick={() => scrollToTop()}>
