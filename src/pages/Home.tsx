@@ -19,7 +19,7 @@ import edit from "./../assets/edit.jpg";
 import review from "./../assets/review.jpg";
 import dowload from "./../assets/dowload.png";
 import vp from "./../assets/vp.jpg";
-import vacole from "./../assets/vacole.mp4";
+import album from "./../assets/album.mp4";
 const Home = () => {
   const onChange = (currentSlide: number) => {
     console.log(currentSlide);
@@ -49,7 +49,7 @@ const Home = () => {
             className="absolute z-10 
           "
           >
-            <source src={vacole} type="video/mp4" />
+            <source src={album} type="video/mp4" />
           </video>
         </header>
       </div>
