@@ -189,7 +189,7 @@ const Faq = () => {
           </div>
         </div>
       </div>
-      <div className="px-[80px]">
+      <div className="md:px-[80px] px-[10px]">
         <div className={Style.container}>
           <div className="mb-[41px]">
             <div className={Style.faq_title}>FAQ</div>
