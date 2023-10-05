@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import LayoutHeader from "../layouts/Layout.header";
 import Style from "./css/faq.module.css";
+import style from "./css/renders.module.css";
 import { CSSProperties } from "react";
 import { Collapse, CollapseProps, theme } from "antd";
 import { CaretRightOutlined } from "@ant-design/icons";
@@ -176,15 +177,15 @@ const Faq = () => {
   return (
     <>
       <LayoutHeader title="FAQ" />
-      <div className={Style.banner_hero_content}>
+      <div className={style.banner_hero_content}>
         <img
           src="https://www.w3schools.com/css/img_5terre_wide.jpg"
           alt=""
-          className={Style.banner_hero_image}
+          className={style.banner_hero_image}
         />
-        <div className={Style.banner_hero_inner}>
-          <h1 className={Style.banner_hero_title}>Support</h1>
-          <div className={Style.banner_hero_desc}>
+        <div className={style.banner_hero_inner}>
+          <h1 className={style.banner_hero_title}>Support</h1>
+          <div className={style.banner_hero_desc}>
             <p>We’re happy to have you here. Please spend a few minutes</p>
             <p>going through this guide to learn some basic.</p>
           </div>

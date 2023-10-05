@@ -91,6 +91,9 @@
     text-align: center;
     color: #fff;
   }
+  .banner_hero_desc > p {
+    line-height: 25px;
+  }
 
   .banner_hero_imagess {
     width: 80%;

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import LayoutHeader from "../layouts/Layout.header";
 import Style from "./css/blog.module.css";
-
+import style from "./css/renders.module.css";
 import LayoutFooter from "../layouts/Layout.footer";
 import { Col, Row } from "antd";
 
@@ -66,14 +66,14 @@ const Blog = () => {
   return (
     <>
       <LayoutHeader title="AUTOMOTIVE" />
-      <div className={Style.banner_hero_content}>
+      <div className={style.banner_hero_content}>
         <img
           src="https://www.w3schools.com/css/img_5terre_wide.jpg"
           alt=""
-          className={Style.banner_hero_image}
+          className={style.banner_hero_image}
         />
-        <div className={Style.banner_hero_inner}>
-          <h1 className={Style.banner_hero_title}>Blogs</h1>
+        <div className={style.banner_hero_inner}>
+          <h1 className={style.banner_hero_title}>Blogs</h1>
         </div>
       </div>
       <div>

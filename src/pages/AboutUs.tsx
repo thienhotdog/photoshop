@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import LayoutHeader from "../layouts/Layout.header";
 import Style from "./css/about.module.css";
-
+import style from "./css/renders.module.css";
 import LayoutFooter from "../layouts/Layout.footer";
 import { Col, Row } from "antd";
 
@@ -9,15 +9,15 @@ const AboutUs = () => {
   return (
     <>
       <LayoutHeader title="ABOUTUS" />
-      <div className={Style.banner_hero_content}>
+      <div className={style.banner_hero_content}>
         <img
           src="https://www.w3schools.com/css/img_5terre_wide.jpg"
           alt=""
-          className={Style.banner_hero_image}
+          className={style.banner_hero_image}
         />
-        <div className={Style.banner_hero_inner}>
-          <h1 className={Style.banner_hero_title}>Our Story</h1>
-          <div className={Style.banner_hero_desc}>
+        <div className={style.banner_hero_inner}>
+          <h1 className={style.banner_hero_title}>Our Story</h1>
+          <div className={style.banner_hero_desc}>
             <p>
               We are specializing in complete online-marketing solutions for
               real estate agencies around the world.
