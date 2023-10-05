@@ -98,7 +98,7 @@ const Blog = () => {
                 support services like our main office. It will be a point […]
               </p>
               <Link
-                to={""}
+                to={"/blogs/1"}
                 className={Style.banner_hero_btn}
                 onClick={scrollToTop}
               >
