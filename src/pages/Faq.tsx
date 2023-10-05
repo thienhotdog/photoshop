@@ -7,6 +7,7 @@ import { CaretRightOutlined } from "@ant-design/icons";
 import cong from "./../assets/cong.jpg";
 import tru from "./../assets/ttru.png";
 import LayoutFooter from "../layouts/Layout.footer";
+import CtaBox from "../modules/CtaBox";
 const getItem1: (panelStyle: CSSProperties) => CollapseProps["items"] = (
   panelStyle
 ) => [
@@ -257,23 +258,7 @@ const Faq = () => {
           </div>
         </div>
       </div>
-      <div className={`${Style.banner_hero_content} pb-10`}>
-        <img
-          src="https://fotosolution.com/_next/static/media/contact-cta-bg.91e5f46f.svg"
-          alt=""
-          className={Style.banner_hero_imagess}
-        />
-        <div className={Style.banner_hero_inners}>
-          <div className={Style.contact_cta_box}>
-            <div className={Style.contact_cta_slogan}>
-              Ready To Place First Order?
-            </div>
-            <Link to="/" className={Style.btn}>
-              Contact Us
-            </Link>
-          </div>
-        </div>
-      </div>
+      <CtaBox />
       <LayoutFooter />
     </>
   );

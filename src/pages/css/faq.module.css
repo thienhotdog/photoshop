@@ -4,44 +4,17 @@
 }
 
 .banner_hero_imagess {
-  width: 80%;
+  width: 100%;
   height: auto;
+  max-width: 1344px;
+  margin: 20px;
 }
 
 .banner_hero_inners {
   position: absolute;
-  width: 80%;
-}
-.contact_cta_box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 20px;
-  padding: 0 87px 0 92px;
-}
-.contact_cta_slogan {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  color: #fff;
-}
-.btn {
-  width: 250px;
-  height: 80px;
-  border-radius: 20px;
-  background: #fff;
-  padding: 0;
-  line-height: 80px;
-  font-weight: 700;
-  font-size: 20px;
-  color: #4f4f4f;
-  border: none;
-  text-align: center;
-}
-.btn:hover {
-  background-color: #0d6efd;
-  color: #fff;
+  width: 100%;
+  max-width: 1344px;
+  margin: 20px;
 }
 
 .container {
@@ -95,7 +68,7 @@
   width: 30px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
   .banner_hero_content {
     align-items: center;
     height: 100%;
@@ -133,8 +106,9 @@
   }
 
   .banner_hero_imagess {
-    width: 80%;
+    width: 100%;
     height: auto;
+    padding: 0 10px;
   }
   .banner_hero_btn {
     background: #8ac640;
@@ -154,9 +128,33 @@
   .banner_hero_btn:hover {
     background-color: #0d6efd;
   }
+  .contact_cta_box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .contact_cta_slogan {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .btn {
+    border-radius: 20px;
+    background: #fff;
+    padding: 10px 15px;
+    font-weight: 700;
+    font-size: 10px;
+    color: #4f4f4f;
+  }
+  .btn:hover {
+    background-color: #0d6efd;
+    color: #fff;
+  }
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 600px) {
   .banner_hero_content {
     align-items: center;
     height: 100%;
@@ -167,6 +165,7 @@
     align-content: center;
     z-index: 2;
     top: 0;
+    margin: 0 20px;
   }
   .banner_hero_inner {
     display: flex;
@@ -214,5 +213,36 @@
   }
   .banner_hero_btn:hover {
     background-color: #0d6efd;
+  }
+  .contact_cta_boxs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0 60px 0 65px;
+  }
+  .contact_cta_slogan {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #fff;
+  }
+  .btn {
+    width: 250px;
+    height: 80px;
+    border-radius: 20px;
+    background: #fff;
+    padding: 0;
+    line-height: 80px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #4f4f4f;
+    border: none;
+    text-align: center;
+  }
+  .btn:hover {
+    background-color: #0d6efd;
+    color: #fff;
   }
 }

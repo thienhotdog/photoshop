@@ -19,6 +19,7 @@ import review from "./../assets/review.jpg";
 import dowload from "./../assets/dowload.png";
 import vp from "./../assets/vp.jpg";
 import { Link } from "react-router-dom";
+import CtaBox from "../modules/CtaBox";
 const Renders = () => {
   const data = [
     {
@@ -349,23 +350,7 @@ const Renders = () => {
           />
         </div>
       </div> */}
-      <div className={`${Style.banner_hero_content} py-10`}>
-        <img
-          src="https://fotosolution.com/_next/static/media/contact-cta-bg.91e5f46f.svg"
-          alt=""
-          className={Style.banner_hero_imagess}
-        />
-        <div className={Style.banner_hero_inners}>
-          <div className={Style.contact_cta_box}>
-            <div className={Style.contact_cta_slogan}>
-              Ready To Place First Order?
-            </div>
-            <Link to="/" className={Style.btn}>
-              Contact Us
-            </Link>
-          </div>
-        </div>
-      </div>
+      <CtaBox />
       <LayoutFooter />
     </>
   );
