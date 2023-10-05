@@ -386,7 +386,7 @@ const LayoutHeader = (props: Props) => {
               <ul className={style.list_nav2_item}>
                 {props?.title2 == "photoediting" ? (
                   <li className={style.nav2_item}>
-                    <Link to="/home/photoediting" onClick={scrollToTop}>
+                    <Link to="/photoediting" onClick={scrollToTop}>
                       <div>
                         <div className={style.nav2_item_1}>Real Estate</div>
                         <div className={style.nav2_item_2}>Photo Editing</div>
@@ -395,7 +395,7 @@ const LayoutHeader = (props: Props) => {
                   </li>
                 ) : (
                   <li className={style.nav2_item_hover}>
-                    <Link to="/home/photoediting" onClick={scrollToTop}>
+                    <Link to="/photoediting" onClick={scrollToTop}>
                       <div>
                         <div className={style.nav2_item_1}>Real Estate</div>
                         <div className={style.nav2_item_2}>Photo Editing</div>
@@ -405,7 +405,7 @@ const LayoutHeader = (props: Props) => {
                 )}
                 {props?.title2 == "daytotwilight" ? (
                   <li className={style.nav2_item}>
-                    <Link to="/home/day_to_twilight" onClick={scrollToTop}>
+                    <Link to="/day_to_twilight" onClick={scrollToTop}>
                       <div>
                         <div className={style.nav2_item_1}>Convert</div>
                         <div className={style.nav2_item_2}>Day to Twilight</div>
@@ -414,7 +414,7 @@ const LayoutHeader = (props: Props) => {
                   </li>
                 ) : (
                   <li className={style.nav2_item_hover}>
-                    <Link to="/home/day_to_twilight" onClick={scrollToTop}>
+                    <Link to="/day_to_twilight" onClick={scrollToTop}>
                       <div>
                         <div className={style.nav2_item_1}>Convert</div>
                         <div className={style.nav2_item_2}>Day to Twilight</div>
@@ -424,7 +424,7 @@ const LayoutHeader = (props: Props) => {
                 )}
                 {props?.title2 == "retouching" ? (
                   <li className={style.nav2_item}>
-                    <Link to="/home/retouching" onClick={scrollToTop}>
+                    <Link to="/retouching" onClick={scrollToTop}>
                       <div>
                         <div className={style.nav2_item_1}>Product</div>
                         <div className={style.nav2_item_2}>Retouching</div>
@@ -433,7 +433,7 @@ const LayoutHeader = (props: Props) => {
                   </li>
                 ) : (
                   <li className={style.nav2_item_hover}>
-                    <Link to="/home/retouching" onClick={scrollToTop}>
+                    <Link to="/retouching" onClick={scrollToTop}>
                       <div>
                         <div className={style.nav2_item_1}>Product</div>
                         <div className={style.nav2_item_2}>Retouching</div>
@@ -443,7 +443,7 @@ const LayoutHeader = (props: Props) => {
                 )}
                 {props?.title2 == "virtual_staging" ? (
                   <li className={style.nav2_item}>
-                    <Link to="/home/virtual_staging" onClick={scrollToTop}>
+                    <Link to="/virtual_staging" onClick={scrollToTop}>
                       <div>
                         <div className={style.nav2_item_1}>Virtual</div>
                         <div className={style.nav2_item_2}>Staging</div>
@@ -452,7 +452,7 @@ const LayoutHeader = (props: Props) => {
                   </li>
                 ) : (
                   <li className={style.nav2_item_hover}>
-                    <Link to="/home/virtual_staging" onClick={scrollToTop}>
+                    <Link to="/virtual_staging" onClick={scrollToTop}>
                       <div>
                         <div className={style.nav2_item_1}>Virtual</div>
                         <div className={style.nav2_item_2}>Staging</div>
@@ -462,7 +462,7 @@ const LayoutHeader = (props: Props) => {
                 )}
                 {props?.title2 == "clipping_path" ? (
                   <li className={style.nav2_item}>
-                    <Link to="/home/clipping_path" onClick={scrollToTop}>
+                    <Link to="/clipping_path" onClick={scrollToTop}>
                       <div>
                         <div className={style.nav2_item_1}>Clipping</div>
                         <div className={style.nav2_item_2}>Path</div>
@@ -471,7 +471,7 @@ const LayoutHeader = (props: Props) => {
                   </li>
                 ) : (
                   <li className={style.nav2_item_hover}>
-                    <Link to="/home/clipping_path" onClick={scrollToTop}>
+                    <Link to="/clipping_path" onClick={scrollToTop}>
                       <div>
                         <div className={style.nav2_item_1}>Clipping</div>
                         <div className={style.nav2_item_2}>Path</div>
@@ -481,7 +481,7 @@ const LayoutHeader = (props: Props) => {
                 )}
                 {props?.title2 == "720_panarama" ? (
                   <li className={style.nav2_item}>
-                    <Link to="/home/720_panarama" onClick={scrollToTop}>
+                    <Link to="/720_panarama" onClick={scrollToTop}>
                       <div>
                         <div className={style.nav2_item_1}>360</div>
                         <div className={style.nav2_item_2}>Panarama</div>
@@ -490,7 +490,7 @@ const LayoutHeader = (props: Props) => {
                   </li>
                 ) : (
                   <li className={style.nav2_item_hover}>
-                    <Link to="/home/720_panarama" onClick={scrollToTop}>
+                    <Link to="/720_panarama" onClick={scrollToTop}>
                       <div>
                         <div className={style.nav2_item_1}>360</div>
                         <div className={style.nav2_item_2}>Panarama</div>
@@ -500,7 +500,7 @@ const LayoutHeader = (props: Props) => {
                 )}
                 {props?.title2 == "video_editing" ? (
                   <li className={style.nav2_item}>
-                    <Link to="/home/video_editing" onClick={scrollToTop}>
+                    <Link to="/video_editing" onClick={scrollToTop}>
                       <div>
                         <div className={style.nav2_item_1}>Video</div>
                         <div className={style.nav2_item_2}>editing</div>
@@ -509,7 +509,7 @@ const LayoutHeader = (props: Props) => {
                   </li>
                 ) : (
                   <li className={style.nav2_item_hover}>
-                    <Link to="/home/video_editing" onClick={scrollToTop}>
+                    <Link to="/video_editing" onClick={scrollToTop}>
                       <div>
                         <div className={style.nav2_item_1}>Video</div>
                         <div className={style.nav2_item_2}>editing</div>

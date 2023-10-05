@@ -1,10 +1,10 @@
-import { Col, Modal, Row } from "antd";
 import LayoutFooter from "../../layouts/Layout.footer";
 import LayoutHeader from "../../layouts/Layout.header";
 import Carousels from "../../modules/Carousel";
+import Investors from "../../modules/Investors";
+import ProductPortfolio from "../../modules/Product";
+import ProductByCategory from "../../modules/ProductByCategory";
 import ThisWhatWeDo from "../../modules/ThisWhatWeDo";
-import { useState } from "react";
-import CarouselHiden from "../../modules/CarouselHiden";
 import style from "./../css/DaytoTwilight.module.css";
 import time from "./../../assets/24h.png";
 import no from "./../../assets/no.png";
@@ -12,15 +12,35 @@ import change from "./../../assets/change.png";
 import real from "./../../assets/real.png";
 import copy from "./../../assets/copy.png";
 import free from "./../../assets/free.png";
-
-const VirtualStagingCategory = () => {
+import { useState } from "react";
+import { Col, Modal, Row } from "antd";
+import CarouselHiden from "../../modules/CarouselHiden";
+const data = [
+  {
+    textTitle: "SELL PROPERTIES 50% FASTER",
+    text: "Professional quality photos are statistically proven to sell listings 50% faster."
+  },
+  {
+    textTitle: "INCREASE SALE PRICE",
+    text: "Including professional quality photos has been proven to drastically increase the sale price of a property."
+  },
+  {
+    textTitle: "INCREASE PROSPECTS AND BUYER INTEREST",
+    text: "Professional quality images have been shown to generate up to 118% more online views."
+  },
+  {
+    textTitle: "HOME BUYERS WANT TO SEE BEAUTIFUL PHOTO",
+    text: "Home buyers spend 60% of their time viewing photos, while only 20% on the property description and 83% of buyers deem photos to be important listing information."
+  }
+];
+const RetouchingCategory = () => {
   const [show, setShow] = useState<boolean>(false);
   const showMenus = () => {
     console.log("dsg");
     setShow(true);
   };
   return (
-    <>
+    <div>
       <Modal
         open={show}
         centered
@@ -30,7 +50,8 @@ const VirtualStagingCategory = () => {
       >
         <CarouselHiden />
       </Modal>
-      <LayoutHeader title="COMMERCIAL" title2="virtual_staging" />
+
+      <LayoutHeader title="COMMERCIAL" title2="retouching" />
       {/* banner */}
       <Carousels />
       {/* Professional Photo Editing, Virtual Staging, Floor Plan Redraws, &Renders at Unbeatable Prices */}
@@ -155,11 +176,11 @@ const VirtualStagingCategory = () => {
 
       {/* GET STARTED IN UNDER 60 SECONDS */}
 
-      <ThisWhatWeDo title="VirtuaStaging" showMenus={() => showMenus()} />
+      <ThisWhatWeDo title="Retouching" showMenus={() => showMenus()} />
 
       <LayoutFooter />
-    </>
+    </div>
   );
 };
 
-export default VirtualStagingCategory;
+export default RetouchingCategory;

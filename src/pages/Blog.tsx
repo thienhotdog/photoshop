@@ -5,7 +5,64 @@ import Style from "./css/blog.module.css";
 import LayoutFooter from "../layouts/Layout.footer";
 import { Col, Row } from "antd";
 
+const data = [
+  {
+    date: "January 04,2023",
+    id: 1,
+    textTite: "Top Real Estate Photography Trends for 2023",
+    describe:
+      "Dear valued customers, We are delighted to announce that we have opened a new office to meet the growing demand for our services. Our new office is located at 131A Highland St, Worcester, MA, 01609. The new office will provide full consulting and customer support services like our main office. It will be a point",
+    img: "https://fotosolution.com/_next/image?url=https%3A%2F%2Fadmin.fotosolution.com%2Fwp-content%2Fuploads%2F2023%2F03%2Fgeorgie-cobbs-bKjHgo_Lbpo-unsplash-scaled.jpg&w=384&q=75"
+  },
+  {
+    date: "March 23,2023",
+    id: 2,
+    textTite: "Announcement of New Office Establishment",
+    describe:
+      "To welcome 2023, Fotosolution has special programs for all new clients as your regulars.",
+    img: "https://fotosolution.com/_next/image?url=https%3A%2F%2Fadmin.fotosolution.com%2Fwp-content%2Fuploads%2F2023%2F01%2F311.jpeg&w=384&q=75"
+  },
+  {
+    date: "January 04,2023",
+    id: 3,
+    textTite: "Top Real Estate Photography Trends for 2023",
+    describe:
+      "It’s important for photography companies and photographers, in general,to be up to date",
+    img: "https://fotosolution.com/_next/image?url=https%3A%2F%2Fadmin.fotosolution.com%2Fwp-content%2Fuploads%2F2023%2F01%2F315.jpeg&w=384&q=75"
+  },
+  {
+    date: "January 04,2023",
+    id: 4,
+    textTite: "Top Real Estate Photography Trends for 2023",
+    describe:
+      "With all good wishes for a brilliant and happy Christmas season. Hope things are going all",
+    img: "https://fotosolution.com/_next/image?url=https%3A%2F%2Fadmin.fotosolution.com%2Fwp-content%2Fuploads%2F2022%2F12%2F5971605-scaled.jpg&w=384&q=75"
+  },
+  {
+    date: "January 04,2023",
+    id: 5,
+    textTite: "Top Real Estate Photography Trends for 2023",
+    describe:
+      "HOW TO ADD FIRE FOR REAL ESTATE IMAGES ?” is one of the most basic requests",
+    img: "https://fotosolution.com/_next/image?url=https%3A%2F%2Fadmin.fotosolution.com%2Fwp-content%2Fuploads%2F2022%2F12%2F211.jpeg&w=384&q=75"
+  },
+  {
+    date: "January 04,2023",
+    id: 6,
+    textTite: "Top Real Estate Photography Trends for 2023",
+    describe:
+      "TV screen replacement in real estate photos is one of the popular requests Fotosolution – w",
+    img: "https://fotosolution.com/_next/image?url=https%3A%2F%2Fadmin.fotosolution.com%2Fwp-content%2Fuploads%2F2022%2F12%2F253.jpeg&w=384&q=75"
+  }
+];
+
 const Blog = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth" // for smoothly scrolling
+    });
+  };
   return (
     <>
       <LayoutHeader title="AUTOMOTIVE" />
@@ -40,7 +97,11 @@ const Blog = () => {
                 01609. The new office will provide full consulting and customer
                 support services like our main office. It will be a point […]
               </p>
-              <Link to={""} className={Style.banner_hero_btn}>
+              <Link
+                to={""}
+                className={Style.banner_hero_btn}
+                onClick={scrollToTop}
+              >
                 READ MORE
               </Link>
             </div>
@@ -63,164 +124,39 @@ const Blog = () => {
       <div>
         <div className="pb-10 flex justify-center">
           <div className="max-w-[1344px] pl-[50px] pr-[50px]">
-            <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5  ">
-              <div className="bg-[#f7f7f7] rounded-[20px] overflow-hidden	">
-                <div className="transition duration-1000  hover:scale-110 cursor-pointer">
-                  <img
-                    src="https://fotosolution.com/_next/image?url=https%3A%2F%2Fadmin.fotosolution.com%2Fwp-content%2Fuploads%2F2023%2F03%2Fgeorgie-cobbs-bKjHgo_Lbpo-unsplash-scaled.jpg&w=384&q=75"
-                    alt=""
-                    className="w-full"
-                  />
-                </div>
-                <div className="p-[25px]">
-                  <h1 className={Style.blog_item_date}> March 23,2023</h1>
-                  <h3 className={Style.blog_item_link}>
-                    Announcement of New Office Establishment
-                  </h3>
-                  <p className={Style.blog_item_experct}>
-                    Dear valued customers, We are delighted to announce that we
-                    have opened a new office to meet the growing demand for our
-                    services. Our new office is located at 131A Highland St,
-                    Worcester, MA, 01609. The new office will provide full
-                    consulting and customer support services like our main
-                    office. It will be a point […]
-                  </p>
-                  <Link to={""} className={Style.link}>
-                    Read more
-                  </Link>
-                </div>
-              </div>
-
-              <div className="bg-[#f7f7f7] rounded-[20px] overflow-hidden	">
-                <div className="transition duration-1000  hover:scale-110 cursor-pointer">
-                  <img
-                    src="https://fotosolution.com/_next/image?url=https%3A%2F%2Fadmin.fotosolution.com%2Fwp-content%2Fuploads%2F2023%2F03%2Fgeorgie-cobbs-bKjHgo_Lbpo-unsplash-scaled.jpg&w=384&q=75"
-                    alt=""
-                    className="w-full"
-                  />
-                </div>
-                <div className="p-[25px]">
-                  <h1 className={Style.blog_item_date}> March 23,2023</h1>
-                  <h3 className={Style.blog_item_link}>
-                    Announcement of New Office Establishment
-                  </h3>
-                  <p className={Style.blog_item_experct}>
-                    Dear valued customers, We are delighted to announce that we
-                    have opened a new office to meet the growing demand for our
-                    services. Our new office is located at 131A Highland St,
-                    Worcester, MA, 01609. The new office will provide full
-                    consulting and customer support services like our main
-                    office. It will be a point […]
-                  </p>
-                  <Link to={""} className={Style.link}>
-                    Read more
-                  </Link>
-                </div>
-              </div>
-              <div className="bg-[#f7f7f7] rounded-[20px] overflow-hidden	">
-                <div className="transition duration-1000  hover:scale-110 cursor-pointer">
-                  <img
-                    src="https://fotosolution.com/_next/image?url=https%3A%2F%2Fadmin.fotosolution.com%2Fwp-content%2Fuploads%2F2023%2F03%2Fgeorgie-cobbs-bKjHgo_Lbpo-unsplash-scaled.jpg&w=384&q=75"
-                    alt=""
-                    className="w-full"
-                  />
-                </div>
-                <div className="p-[25px]">
-                  <h1 className={Style.blog_item_date}> March 23,2023</h1>
-                  <h3 className={Style.blog_item_link}>
-                    Announcement of New Office Establishment
-                  </h3>
-                  <p className={Style.blog_item_experct}>
-                    Dear valued customers, We are delighted to announce that we
-                    have opened a new office to meet the growing demand for our
-                    services. Our new office is located at 131A Highland St,
-                    Worcester, MA, 01609. The new office will provide full
-                    consulting and customer support services like our main
-                    office. It will be a point […]
-                  </p>
-                  <Link to={""} className={Style.link}>
-                    Read more
-                  </Link>
-                </div>
-              </div>
-              <div className="bg-[#f7f7f7] rounded-[20px] overflow-hidden	">
-                <div className="transition duration-1000  hover:scale-110 cursor-pointer">
-                  <img
-                    src="https://fotosolution.com/_next/image?url=https%3A%2F%2Fadmin.fotosolution.com%2Fwp-content%2Fuploads%2F2023%2F03%2Fgeorgie-cobbs-bKjHgo_Lbpo-unsplash-scaled.jpg&w=384&q=75"
-                    alt=""
-                    className="w-full"
-                  />
-                </div>
-                <div className="p-[25px]">
-                  <h1 className={Style.blog_item_date}> March 23,2023</h1>
-                  <h3 className={Style.blog_item_link}>
-                    Announcement of New Office Establishment
-                  </h3>
-                  <p className={Style.blog_item_experct}>
-                    Dear valued customers, We are delighted to announce that we
-                    have opened a new office to meet the growing demand for our
-                    services. Our new office is located at 131A Highland St,
-                    Worcester, MA, 01609. The new office will provide full
-                    consulting and customer support services like our main
-                    office. It will be a point […]
-                  </p>
-                  <Link to={""} className={Style.link}>
-                    Read more
-                  </Link>
-                </div>
-              </div>
-              <div className="bg-[#f7f7f7] rounded-[20px] overflow-hidden	">
-                <div className="transition duration-1000  hover:scale-110 cursor-pointer">
-                  <img
-                    src="https://fotosolution.com/_next/image?url=https%3A%2F%2Fadmin.fotosolution.com%2Fwp-content%2Fuploads%2F2023%2F03%2Fgeorgie-cobbs-bKjHgo_Lbpo-unsplash-scaled.jpg&w=384&q=75"
-                    alt=""
-                    className="w-full"
-                  />
-                </div>
-                <div className="p-[25px]">
-                  <h1 className={Style.blog_item_date}> March 23,2023</h1>
-                  <h3 className={Style.blog_item_link}>
-                    Announcement of New Office Establishment
-                  </h3>
-                  <p className={Style.blog_item_experct}>
-                    Dear valued customers, We are delighted to announce that we
-                    have opened a new office to meet the growing demand for our
-                    services. Our new office is located at 131A Highland St,
-                    Worcester, MA, 01609. The new office will provide full
-                    consulting and customer support services like our main
-                    office. It will be a point […]
-                  </p>
-                  <Link to={""} className={Style.link}>
-                    Read more
-                  </Link>
-                </div>
-              </div>
-              <div className="bg-[#f7f7f7] rounded-[20px] overflow-hidden	">
-                <div className="transition duration-1000  hover:scale-110 cursor-pointer">
-                  <img
-                    src="https://fotosolution.com/_next/image?url=https%3A%2F%2Fadmin.fotosolution.com%2Fwp-content%2Fuploads%2F2023%2F03%2Fgeorgie-cobbs-bKjHgo_Lbpo-unsplash-scaled.jpg&w=384&q=75"
-                    alt=""
-                    className="w-full"
-                  />
-                </div>
-                <div className="p-[25px]">
-                  <h1 className={Style.blog_item_date}> March 23,2023</h1>
-                  <h3 className={Style.blog_item_link}>
-                    Announcement of New Office Establishment
-                  </h3>
-                  <p className={Style.blog_item_experct}>
-                    Dear valued customers, We are delighted to announce that we
-                    have opened a new office to meet the growing demand for our
-                    services. Our new office is located at 131A Highland St,
-                    Worcester, MA, 01609. The new office will provide full
-                    consulting and customer support services like our main
-                    office. It will be a point […]
-                  </p>
-                  <Link to={""} className={Style.link}>
-                    Read more
-                  </Link>
-                </div>
-              </div>
+            <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
+              {data.map((item: any) => {
+                console.log(item, "item");
+                return (
+                  <div className="bg-[#f7f7f7] rounded-[20px]  overflow-hidden  	">
+                    <div className="transition duration-1000  hover:scale-110 cursor-pointer aspect-[355/270] w-full 	 ">
+                      <Link to={`/blogs/${item.id}`} onClick={scrollToTop}>
+                        <img
+                          src={item.img}
+                          alt=""
+                          className="h-full w-full object-cover	"
+                        />
+                      </Link>
+                    </div>
+                    <div className="p-[25px]">
+                      <h1 className={Style.blog_item_date}>{item.date}</h1>
+                      <Link to={`/blogs/${item.id}`} onClick={scrollToTop}>
+                        <h3 className={Style.blog_item_link}>
+                          {item.textTite}
+                        </h3>
+                      </Link>
+                      <p className={Style.blog_item_experct}>{item.describe}</p>
+                      <Link
+                        to={`/blogs/${item.id}`}
+                        className={Style.link}
+                        onClick={scrollToTop}
+                      >
+                        Read more
+                      </Link>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>

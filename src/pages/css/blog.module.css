@@ -13,7 +13,7 @@
   font-size: 25px;
   line-height: 30px;
   color: #252725;
-  margin-bottom: 37px;
+  margin-bottom: 20px;
 }
 .text_desc {
   font-weight: 400;
@@ -146,4 +146,41 @@
   line-height: 14px;
   color: #4f4f4f;
   margin-bottom: 10px;
+}
+
+.text_desc_blog {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.text_titles {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  color: #252725;
+  margin-bottom: 20px;
+}
+.text_by_desc {
+  margin-top: 20px;
+  padding: 7px 0;
+  font-size: 13px;
+  color: #333;
+  border-bottom: 1px solid #e7e6e6;
+  border-top: 1px solid #e7e6e6;
+}
+
+.li {
+  padding: 5px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #252725;
+  line-height: 19px;
+}
+
+.ul {
+  list-style-type: disc;
+  padding-left: 2rem;
 }
