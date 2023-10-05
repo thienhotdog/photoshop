@@ -39,13 +39,17 @@ const LayoutHeader = (props: Props) => {
                 <h3 className={style.h3_menu}>Menu</h3>
 
                 <ul>
-                  <li className={style.menu_item} onClick={scrollToTop}>
-                    <Link to="/">Home</Link>
+                  <li className={style.menu_item}>
+                    <Link to="/" onClick={scrollToTop}>
+                      Home
+                    </Link>
                   </li>
                   <li className={style.menu_items}>
                     <div className={style.div_menu}>
-                      <span className={style.span} onClick={scrollToTop}>
-                        <Link to="/servives">Services</Link>
+                      <span className={style.span}>
+                        <Link to="/servives" onClick={scrollToTop}>
+                          Services
+                        </Link>
                       </span>
                       <div className={style.div_icon}>
                         <img
@@ -56,20 +60,30 @@ const LayoutHeader = (props: Props) => {
                       </div>
                     </div>
                   </li>
-                  <li className={style.menu_item} onClick={scrollToTop}>
-                    <Link to="/renders">How it works</Link>
+                  <li className={style.menu_item}>
+                    <Link to="/renders" onClick={scrollToTop}>
+                      How it works
+                    </Link>
                   </li>
-                  <li className={style.menu_item} onClick={scrollToTop}>
-                    <Link to="/faq">Faq</Link>
+                  <li className={style.menu_item}>
+                    <Link to="/faq" onClick={scrollToTop}>
+                      Faq
+                    </Link>
                   </li>
-                  <li className={style.menu_item} onClick={scrollToTop}>
-                    <Link to="/blogs">Blogs</Link>
+                  <li className={style.menu_item}>
+                    <Link to="/blogs" onClick={scrollToTop}>
+                      Blogs
+                    </Link>
                   </li>
-                  <li className={style.menu_item} onClick={scrollToTop}>
-                    <Link to="/about-us">About us</Link>
+                  <li className={style.menu_item}>
+                    <Link to="/about-us" onClick={scrollToTop}>
+                      About us
+                    </Link>
                   </li>
-                  <li className={style.menu_item} onClick={scrollToTop}>
-                    <Link to="">Contact us</Link>
+                  <li className={style.menu_item}>
+                    <Link to="" onClick={scrollToTop}>
+                      Contact us
+                    </Link>
                   </li>
                 </ul>
               </nav>
