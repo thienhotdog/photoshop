@@ -32,7 +32,7 @@
     color: #fff;
   }
   .banner_hero_desc > p {
-    line-height: 25px;
+    line-height: 15px;
   }
 
   .banner_hero_imagess {
@@ -90,9 +90,6 @@
     font-size: 18px;
     text-align: center;
     color: #fff;
-  }
-  .banner_hero_desc > p {
-    line-height: 25px;
   }
 
   .banner_hero_imagess {
