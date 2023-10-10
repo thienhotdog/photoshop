@@ -13,9 +13,11 @@ import before_20230207_joanna from "./../assets/ClippingPath/20230207-DYConsulta
 import after_20230207_joanna from "./../assets/ClippingPath/20230207-DYConsultants-Joanna-002_1.jpg";
 import style from "./css/ThisWhatWeDo.module.css";
 import { Link } from "react-router-dom";
+import CtaBox from "./CtaBox";
 type Props = {
   showMenus?: () => void;
   title?: string;
+  home?: string;
 };
 const ThisWhatWeDo = (props: Props) => {
   const scrollToTop = () => {
@@ -571,6 +573,7 @@ const ThisWhatWeDo = (props: Props) => {
           </Col>
         </Row>
       </div>
+      {props?.home != "home" && <CtaBox />}
     </div>
   );
 };

@@ -19,6 +19,7 @@ import edit from "./../assets/edit.jpg";
 import review from "./../assets/review.jpg";
 import dowload from "./../assets/dowload.png";
 import vp from "./../assets/vp.jpg";
+import album from "./../assets/chuan.mp4";
 const Home = () => {
   const onChange = (currentSlide: number) => {
     console.log(currentSlide);
@@ -101,11 +102,9 @@ const Home = () => {
             className="pl-5 pr-5"
           >
             <div className="mt-10 items-center overflow-hidden mb-10">
-              <img
-                src={about}
-                alt=""
-                className="transition duration-1000  hover:scale-110 "
-              />
+              <video autoPlay loop muted className=" z-10 ">
+                <source src={album} type="video/mp4" />
+              </video>
             </div>
           </Col>
         </Row>
@@ -274,7 +273,7 @@ const Home = () => {
 
       {/* GET STARTED IN UNDER 60 SECONDS */}
       <div>
-        <ThisWhatWeDo />
+        <ThisWhatWeDo home="home" />
       </div>
       {/* 4 bước */}
       <div className="bg-[#f6f6f6] py-[80px] ">

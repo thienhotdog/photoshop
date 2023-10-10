@@ -31,7 +31,7 @@ const AboutUs = () => {
       </div>
       <div>
         <div className="pt-[100px] pb-10 flex justify-center">
-          <div className="flex justify-between  max-w-[1344px]">
+          {/* <div className="flex justify-between  max-w-[1344px]">
             <div className="w-[50%] ">
               <img
                 src="https://fotosolution.com/_next/image?url=https%3A%2F%2Fadmin.fotosolution.com%2Fwp-content%2Fuploads%2F2022%2F11%2FMA109728.jpg&w=640&q=75"
@@ -60,7 +60,41 @@ const AboutUs = () => {
                 hesitate to contact us.
               </p>
             </div>
-          </div>
+          </div> */}
+          <Row className="max-w-[1344px] px-[15px]">
+            <Col xl={{ span: 12 }} sm={{ span: 24 }} xs={{ span: 24 }}>
+              <div className=" items-center flex justify-center overflow-hidden  ">
+                <img
+                  src="https://fotosolution.com/_next/image?url=https%3A%2F%2Fadmin.fotosolution.com%2Fwp-content%2Fuploads%2F2022%2F11%2FMA109728.jpg&w=640&q=75"
+                  alt=""
+                  // className="transition duration-1000  hover:scale-110 "
+                />
+              </div>
+            </Col>
+            <Col xl={{ span: 12 }} sm={{ span: 24 }} xs={{ span: 24 }}>
+              <div className="pt-[32px] pl-[12px] pr-[12px]">
+                <h3 className={Style.text_date}>ABOUT US</h3>
+                <p className={Style.text_desc}>
+                  Photo Solution Digital Company located in Ha Noi, Viet Nam
+                  with 9 years operating in computer based graphic design
+                  services such as: Color correction, Image manipulation, Image
+                  retouching, Drop shadow, Change sky, Create Panorama photos,
+                  Real Estate photos, edit…
+                </p>
+                <p className={Style.text_desc}>
+                  We are specializing in complete online-marketing solutions for
+                  real estate agencies around the world. Based on low cost
+                  production but with high quality, fastturnaround time,
+                  educated and hard-working staff as well as updated and
+                  advanced technology, we are willing to provide you the best
+                  quality and inexpensive graphic packages accelerating your
+                  brokering services. To receive free test sample, details of
+                  our quotation or any further information/ clarification,
+                  please do not hesitate to contact us.
+                </p>
+              </div>
+            </Col>
+          </Row>
         </div>
       </div>
 
