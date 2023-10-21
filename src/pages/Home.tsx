@@ -110,7 +110,7 @@ const Home = () => {
         </Row>
       </div>
       {/* Professional Photo Editing, Virtual Staging, Floor Plan Redraws, &Renders at Unbeatable Prices */}
-      <div className="my-10 mx-[9%] ">
+      {/* <div className="my-10 mx-[9%] ">
         <div className="text-center text-[28px]  ">
           <h1 className="text-[40px] font-bold">Why Choose Us?</h1>
           <div className="flex justify-center py-3">
@@ -269,14 +269,14 @@ const Home = () => {
             </Col>
           </Row>
         </div>
-      </div>
+      </div> */}
 
       {/* GET STARTED IN UNDER 60 SECONDS */}
-      <div>
+      {/* <div>
         <ThisWhatWeDo home="home" />
-      </div>
+      </div> */}
       {/* 4 bước */}
-      <div className="bg-[#f6f6f6] py-[80px] ">
+      {/* <div className="bg-[#f6f6f6] py-[80px] ">
         <div className="mx-[6%] ">
           <Row justify="space-between">
             <Col
@@ -376,10 +376,10 @@ const Home = () => {
             </Col>
           </Row>
         </div>
-      </div>
+      </div> */}
       {/* ABOUT US */}
 
-      <div
+      {/* <div
         className={`${Style.media} 2xl:mx-[9%] xl:mx-[5%] xl:mx-[1.5%] mb-[80px]`}
       >
         <Row>
@@ -425,6 +425,14 @@ const Home = () => {
             </div>
           </Col>
         </Row>
+      </div> */}
+      <div className="flex justify-center">
+        <div className="w-[1080px] h-[800px]">
+          <iframe
+            className="w-full h-full"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3738.5608785067657!2d106.18234167601649!3d20.442144107666564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135e73e321e85e9%3A0x3f76b650d8047245!2zMTA5IFBow7kgTmdoxKlhLCBI4bqhIExvbmcsIFRQLiBOYW0gxJDhu4tuaCwgTmFtIMSQ4buLbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1697883308077!5m2!1svi!2s"
+          ></iframe>
+        </div>
       </div>
       <LayoutFooter />
     </>
