@@ -40,7 +40,7 @@ const ClippingPathCategory = () => {
     setShow(true);
   };
   return (
-    <div>
+    <>
       <Modal
         open={show}
         centered
@@ -179,7 +179,7 @@ const ClippingPathCategory = () => {
       <ThisWhatWeDo title="ClippingPath" showMenus={() => showMenus()} />
 
       <LayoutFooter />
-    </div>
+    </>
   );
 };
 
